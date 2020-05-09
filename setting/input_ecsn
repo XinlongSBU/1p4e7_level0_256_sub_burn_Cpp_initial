@@ -1,0 +1,148 @@
+# INITIAL MODEL
+maestro.model_file = "ecsn.temp1p4.hse.25600"
+#maestro.drdxfac = 5
+maestro.drdxfac = 7
+#maestro.perturb_model = true
+
+#amrex.fpe_trap_invalid = 1
+
+# GRIDDING AND REFINEMENT
+#amr.max_level          = 3       # maximum level number allowed
+amr.max_level          = 0
+#amr.n_cell             = 128 128 128
+#amr.n_cell             = 4 4 4
+#amr.n_cell             = 512 512 512
+amr.n_cell             = 256 256 256
+amr.max_grid_size      = 64
+amr.ref_ratio          = 2 2 2 2 2 2 # refinement ratio 
+amr.blocking_factor    = 8       # block factor in grid generation
+#amr.refine_grid_layout = 0      # chop grids up into smaller grids if nprocs > ngrids
+maestro.regrid_int     = 10      # how often to regrid
+
+maestro.anelastic_cutoff_density = 1.e6
+maestro.base_cutoff_density = 1.e5
+maestro.burning_cutoff_density = 1.e5
+# maestro.burning_cutoff_density_lo = 1.e5 
+
+
+maestro.do_sponge = 1
+maestro.sponge_center_density = 3.e6
+maestro.sponge_start_factor = 3.333e0
+maestro.sponge_kappa = 10.e0
+
+maestro.spherical = 1
+maestro.octant = true
+
+# PROBLEM SIZE
+geometry.prob_lo     =  0.0    0.0    0.0
+#geometry.prob_hi     =  4.e7   4.e7   4.e7
+# geometry.prob_hi     =  2.e8   2.e8   2.e8
+geometry.prob_hi     =  1.4e7   1.4e7   1.4e7
+
+# TIME STEPPING
+maestro.max_step  = 28000
+maestro.stop_time = 30000.
+maestro.small_dt = 1.e-30
+maestro.cfl       = 0.7    # cfl number for hyperbolic system
+                           # In this test problem, the velocity is
+                           # time-dependent.  We could use 0.9 in
+                           # the 3D test, but need to use 0.7 in 2D
+                           # to satisfy CFL condition.
+
+# PLOTFILES
+#maestro.plot_base_name  = ecsn    # root name of plot file
+maestro.plot_int   = 10     # number of timesteps between plot files
+# maestro.small_plot_int = 5
+
+# maestro.small_plot_vars = rho tfromp Hnuc p0pluspi X(ne20) X(o16) X(o20) X(si28) X(al27) X(h1) X(he4) X(p31) X(s32) X(mg24) X(f20)
+
+# CHECKPOINT
+maestro.check_base_name = chk
+maestro.chk_int         = 10
+
+maestro.init_shrink = 5.e-2
+maestro.max_dt_growth = 1.1e0
+maestro.use_soundspeed_firstdt = true
+maestro.use_divu_firstdt = true
+
+# BOUNDARY CONDITIONS
+# 0 = Interior   3 = Symmetry
+# 1 = Inflow     4 = Slipwall
+# 2 = Outflow    5 = NoSlipWall
+maestro.lo_bc = 3 3 3
+maestro.hi_bc = 2 2 2
+#maestro.hi_bc = 3 3 3
+geometry.is_periodic =  0 0 0
+
+
+
+# VERBOSITY
+maestro.v              = 1       # verbosity
+maestro.mg_verbose     = 1
+maestro.cg_verbose     = 0
+
+# ALGORITHMIC OPTIONS
+maestro.do_initial_projection = true
+maestro.init_divu_iter        = 3
+maestro.init_iter             = 1
+
+# maestro.do_burning = true
+maestro.do_burning = true
+maestro.evolve_base_state = false
+maestro.dpdt_factor = 0.0e0
+maestro.use_tfromp = true
+maestro.perturb_model = false
+maestro.use_exact_base_state = false
+
+# DEBUG FOR NAN
+# amrex.fpe_trap_invalid = 1       # floating point exception
+
+
+# tolerances for the initial projection
+maestro.eps_init_proj_cart = 1.e-12
+maestro.eps_init_proj_sph  = 1.e-10
+# tolerances for the divu iterations
+maestro.eps_divu_cart      = 1.e-12  # xinlong
+maestro.eps_divu_sph       = 1.e-10
+maestro.divu_iter_factor   = 100.
+maestro.divu_level_factor  = 10.
+# tolerances for the MAC projection
+maestro.eps_mac            = 1.e-10
+maestro.eps_mac_max        = 1.e-8
+maestro.mac_level_factor   = 10.
+maestro.eps_mac_bottom     = 1.e-3
+# tolerances for the nodal projection
+maestro.eps_hg             = 1.e-11
+maestro.eps_hg_max         = 1.e-10
+maestro.hg_level_factor    = 10.
+maestro.eps_hg_bottom      = 1.e-4
+
+&probin
+
+  use_eos_coulomb = T
+  retry_burn = F
+
+  rtol_spec = 1.e-10
+  rtol_temp = 1.e-10
+  rtol_enuc = 1.e-10
+
+  atol_spec = 1.e-10
+  atol_temp = 1.e-10
+  atol_enuc = 1.e-10
+
+  velpert_amplitude = 1.e5
+  velpert_radius = 2.e7
+  velpert_scale = 1.e7
+  velpert_steep = 1.e5
+  call_eos_in_rhs = F
+  jacobian = 1
+  renormalize_abundances = F
+/
+#  retry_burn_max_change = 1.0e2
+  
+#  rtol_spec = 1.e-8
+#  rtol_temp = 1.e-6
+#  rtol_enuc = 1.e-6
+#  SMALL_X_SAFE = 1.0e-40
+#/
+
