@@ -1,0 +1,4606 @@
+MPI initialized with 64 MPI processes
+OMP initialized with 16 OMP threads
+AMReX (20.04-6-g8c07fd8c0e36) initialized
+Calling Setup()
+Calling ReadParameters()
+ WARNING: burning_cutoff_density_lo not supplied in the inputs file
+ WARNING: setting burning_cutoff_density_lo = base_cutoff_density
+reading extern runtime parameters ...
+Calling VariableSetup()
+ 
+ Initializing Helmholtz EOS and using Coulomb corrections.
+ 
+ Calling set_method_params()
+Calling BCSetup()
+ Calling init_base_state_geometry()
+Calling InitBaseStateGeometry()
+Calling BaseStateGeometry::Init()
+Calling Init()
+Initializing from checkpoint chk0000860
+                                                            
+------------------------------------------------------------------------------
+ reading initial model
+       25600 points found in the initial model file
+          14  variables found in the initial model file
+Restart from checkpoint chk0000860
+read CPU time: 0
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Calling Evolve()
+Call to estdt for level 0 gives dt_lev = 0.01513768901
+Minimum estdt over all levels = 0.01513768901
+Call to estdt at beginning of step 861 gives dt =0.01513768901
+
+Timestep 861 starts with TIME = 8.114530697 DT = 0.01513768901
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.144688049e+10
+MLMG: Initial residual (resid0) = 7.144688049e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.498931851, 2.097966827e-11
+MLMG: Timers: Solve = 0.138059094 Iter = 0.133250767 Bottom = 0.00550656
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.14468781e+10
+MLMG: Initial residual (resid0) = 1.278023932e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.497394942, 2.095815775e-11
+MLMG: Timers: Solve = 0.135703662 Iter = 0.13262363 Bottom = 0.00560828
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.805664898e+10
+MLMG: Initial residual (resid0) = 8.805664898e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09745025635, 1.106676866e-12
+MLMG: Timers: Solve = 0.659639538 Iter = 0.653725703 Bottom = 0.004742667
+Done calling nodal solver
+
+Timestep 861 ends with TIME = 8.129668386 DT = 0.01513768901
+Timing summary:
+Advection  :0.9170622826 seconds
+MAC Proj   :0.3029949665 seconds
+Nodal Proj :0.927724123 seconds
+Reactions  :14.52282238 seconds
+Misc       :0.3953039646 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.06700802
+Call to estdt for level 0 gives dt_lev = 0.01535958062
+Minimum estdt over all levels = 0.01535958062
+Call to estdt at beginning of step 862 gives dt =0.01535958062
+
+Timestep 862 starts with TIME = 8.129668386 DT = 0.01535958062
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.006574332e+10
+MLMG: Initial residual (resid0) = 7.006574332e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.261374444, 1.800272693e-11
+MLMG: Timers: Solve = 0.138884619 Iter = 0.133981614 Bottom = 0.005625245
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.006574448e+10
+MLMG: Initial residual (resid0) = 1.277589056e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.254511356, 1.790477452e-11
+MLMG: Timers: Solve = 0.134345634 Iter = 0.131542976 Bottom = 0.005541971
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.027352388e+10
+MLMG: Initial residual (resid0) = 9.027352388e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1000595093, 1.108403716e-12
+MLMG: Timers: Solve = 0.657756915 Iter = 0.65281789 Bottom = 0.004681257
+Done calling nodal solver
+
+Timestep 862 ends with TIME = 8.145027967 DT = 0.01535958062
+Timing summary:
+Advection  :0.8454611301 seconds
+MAC Proj   :0.2969450951 seconds
+Nodal Proj :0.9224050045 seconds
+Reactions  :14.90192389 seconds
+Misc       :0.3574655056 seconds
+Base State :0 seconds
+Time to advance time step: 17.32568216
+Call to estdt for level 0 gives dt_lev = 0.01572901368
+Minimum estdt over all levels = 0.01572901368
+Call to estdt at beginning of step 863 gives dt =0.01572901368
+
+Timestep 863 starts with TIME = 8.145027967 DT = 0.01572901368
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.724103674e+10
+MLMG: Initial residual (resid0) = 6.724103674e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.029651152, 1.531283874e-11
+MLMG: Timers: Solve = 0.143700897 Iter = 0.140029386 Bottom = 0.005562617
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.724103031e+10
+MLMG: Initial residual (resid0) = 1.277690682e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.015050355, 1.509569902e-11
+MLMG: Timers: Solve = 0.142851216 Iter = 0.140013294 Bottom = 0.005696613
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.975052756e+10
+MLMG: Initial residual (resid0) = 9.975052756e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1039733887, 1.042334223e-12
+MLMG: Timers: Solve = 0.655923384 Iter = 0.650807249 Bottom = 0.004626299
+Done calling nodal solver
+
+Timestep 863 ends with TIME = 8.160756981 DT = 0.01572901368
+Timing summary:
+Advection  :0.8405900002 seconds
+MAC Proj   :0.3086941242 seconds
+Nodal Proj :0.9503800869 seconds
+Reactions  :15.03703785 seconds
+Misc       :0.3562631607 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.49443698
+Call to estdt for level 0 gives dt_lev = 0.01542743518
+Minimum estdt over all levels = 0.01542743518
+Call to estdt at beginning of step 864 gives dt =0.01542743518
+
+Timestep 864 starts with TIME = 8.160756981 DT = 0.01542743518
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.422994065e+10
+MLMG: Initial residual (resid0) = 6.422994065e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7983278362, 1.242921647e-11
+MLMG: Timers: Solve = 0.129374098 Iter = 0.126540783 Bottom = 0.005507699
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.422990628e+10
+MLMG: Initial residual (resid0) = 1.277281855e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7828412801, 1.218811182e-11
+MLMG: Timers: Solve = 0.122953037 Iter = 0.120179964 Bottom = 0.005602374
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.052508133e+11
+MLMG: Initial residual (resid0) = 1.052508133e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1033554077, 9.819915346e-13
+MLMG: Timers: Solve = 0.654922824 Iter = 0.649348338 Bottom = 0.00466694
+Done calling nodal solver
+
+Timestep 864 ends with TIME = 8.176184416 DT = 0.01542743518
+Timing summary:
+Advection  :0.8491270542 seconds
+MAC Proj   :0.2725260258 seconds
+Nodal Proj :0.9177381992 seconds
+Reactions  :15.03014612 seconds
+Misc       :0.3562138081 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.42717409
+Call to estdt for level 0 gives dt_lev = 0.01528042683
+Minimum estdt over all levels = 0.01528042683
+Call to estdt at beginning of step 865 gives dt =0.01528042683
+
+Timestep 865 starts with TIME = 8.176184416 DT = 0.01528042683
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.788799935e+10
+MLMG: Initial residual (resid0) = 7.788799935e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.167556564, 7.918494012e-11
+MLMG: Timers: Solve = 0.118241257 Iter = 0.115360228 Bottom = 0.0049844
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.788799852e+10
+MLMG: Initial residual (resid0) = 1.276076029e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.99990315, 7.703244742e-11
+MLMG: Timers: Solve = 0.103807831 Iter = 0.100771129 Bottom = 0.004961625
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.083841252e+11
+MLMG: Initial residual (resid0) = 1.083841252e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.103805542, 9.577559614e-13
+MLMG: Timers: Solve = 0.662951148 Iter = 0.656780796 Bottom = 0.004550886
+Done calling nodal solver
+
+Timestep 865 ends with TIME = 8.191464843 DT = 0.01528042683
+Timing summary:
+Advection  :0.8695578575 seconds
+MAC Proj   :0.2419569492 seconds
+Nodal Proj :0.9240090847 seconds
+Reactions  :14.9892621 seconds
+Misc       :0.3511269093 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.37720394
+Call to estdt for level 0 gives dt_lev = 0.01518997107
+Minimum estdt over all levels = 0.01518997107
+Call to estdt at beginning of step 866 gives dt =0.01518997107
+
+Timestep 866 starts with TIME = 8.191464843 DT = 0.01518997107
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.795023264e+10
+MLMG: Initial residual (resid0) = 8.795023264e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.370418575, 4.969195014e-11
+MLMG: Timers: Solve = 0.109802344 Iter = 0.106870633 Bottom = 0.004957526
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.795023223e+10
+MLMG: Initial residual (resid0) = 1.275162763e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.421295482, 5.02704242e-11
+MLMG: Timers: Solve = 0.123244014 Iter = 0.120256571 Bottom = 0.005020804
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.035313506e+11
+MLMG: Initial residual (resid0) = 1.035313506e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1046524048, 1.010828161e-12
+MLMG: Timers: Solve = 0.663504813 Iter = 0.65759076 Bottom = 0.004730607
+Done calling nodal solver
+
+Timestep 866 ends with TIME = 8.206654814 DT = 0.01518997107
+Timing summary:
+Advection  :0.8252186775 seconds
+MAC Proj   :0.2538962364 seconds
+Nodal Proj :0.9261958599 seconds
+Reactions  :15.65752077 seconds
+Misc       :0.3508205414 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.014853
+Call to estdt for level 0 gives dt_lev = 0.01506582319
+Minimum estdt over all levels = 0.01506582319
+Call to estdt at beginning of step 867 gives dt =0.01506582319
+
+Timestep 867 starts with TIME = 8.206654814 DT = 0.01506582319
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.504077528e+10
+MLMG: Initial residual (resid0) = 9.504077528e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.838175557, 5.090631408e-11
+MLMG: Timers: Solve = 0.115714733 Iter = 0.112790859 Bottom = 0.004986555
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.504077483e+10
+MLMG: Initial residual (resid0) = 1.274314663e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.928647606, 5.18582431e-11
+MLMG: Timers: Solve = 0.105176747 Iter = 0.102418944 Bottom = 0.005029164
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.976321482e+10
+MLMG: Initial residual (resid0) = 9.976321482e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1052474976, 1.054972995e-12
+MLMG: Timers: Solve = 0.657813784 Iter = 0.653109653 Bottom = 0.004562083
+Done calling nodal solver
+
+Timestep 867 ends with TIME = 8.221720637 DT = 0.01506582319
+Timing summary:
+Advection  :0.8401172161 seconds
+MAC Proj   :0.2403478622 seconds
+Nodal Proj :0.9218862057 seconds
+Reactions  :14.84639692 seconds
+Misc       :0.3516619205 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.20198894
+Call to estdt for level 0 gives dt_lev = 0.01396957691
+Minimum estdt over all levels = 0.01396957691
+Call to estdt at beginning of step 868 gives dt =0.01396957691
+
+Timestep 868 starts with TIME = 8.221720637 DT = 0.01396957691
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.577997826e+10
+MLMG: Initial residual (resid0) = 8.577997826e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.178833208, 6.037344977e-11
+MLMG: Timers: Solve = 0.116027902 Iter = 0.112946821 Bottom = 0.004995146
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.577997946e+10
+MLMG: Initial residual (resid0) = 1.272813148e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.279712204, 6.15494692e-11
+MLMG: Timers: Solve = 0.114726211 Iter = 0.111147635 Bottom = 0.004980481
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.774549235e+10
+MLMG: Initial residual (resid0) = 9.774549235e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.0987701416, 1.010482829e-12
+MLMG: Timers: Solve = 0.663826212 Iter = 0.658994165 Bottom = 0.004590705
+Done calling nodal solver
+
+Timestep 868 ends with TIME = 8.235690214 DT = 0.01396957691
+Timing summary:
+Advection  :0.836302042 seconds
+MAC Proj   :0.2501308918 seconds
+Nodal Proj :0.9244551659 seconds
+Reactions  :14.58726525 seconds
+Misc       :0.351796627 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.95145917
+Call to estdt for level 0 gives dt_lev = 0.01331549536
+Minimum estdt over all levels = 0.01331549536
+Call to estdt at beginning of step 869 gives dt =0.01331549536
+
+Timestep 869 starts with TIME = 8.235690214 DT = 0.01331549536
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.473776782e+10
+MLMG: Initial residual (resid0) = 7.473776782e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.337423147, 7.141534063e-11
+MLMG: Timers: Solve = 0.115227854 Iter = 0.111775613 Bottom = 0.005046235
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.47378041e+10
+MLMG: Initial residual (resid0) = 1.270277195e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.446417774, 7.2873666e-11
+MLMG: Timers: Solve = 0.117531277 Iter = 0.114806752 Bottom = 0.00497064
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.489973404e+10
+MLMG: Initial residual (resid0) = 9.489973404e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09501647949, 1.001230198e-12
+MLMG: Timers: Solve = 0.67669855 Iter = 0.671644493 Bottom = 0.004521832
+Done calling nodal solver
+
+Timestep 869 ends with TIME = 8.249005709 DT = 0.01331549536
+Timing summary:
+Advection  :0.8147079945 seconds
+MAC Proj   :0.2522881031 seconds
+Nodal Proj :0.9397010803 seconds
+Reactions  :14.59216499 seconds
+Misc       :0.321242094 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.92118812
+Call to estdt for level 0 gives dt_lev = 0.0133821866
+Minimum estdt over all levels = 0.0133821866
+Call to estdt at beginning of step 870 gives dt =0.0133821866
+
+Timestep 870 starts with TIME = 8.249005709 DT = 0.0133821866
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.361992453e+10
+MLMG: Initial residual (resid0) = 6.361992453e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.358477195, 8.422639975e-11
+MLMG: Timers: Solve = 0.115845159 Iter = 0.113042973 Bottom = 0.005033727
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.361992471e+10
+MLMG: Initial residual (resid0) = 1.268831182e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.463221053, 8.587279972e-11
+MLMG: Timers: Solve = 0.121075719 Iter = 0.117928555 Bottom = 0.005010324
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.503541115e+10
+MLMG: Initial residual (resid0) = 9.503541115e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09748077393, 1.02573107e-12
+MLMG: Timers: Solve = 0.662680937 Iter = 0.656531184 Bottom = 0.004511398
+Done calling nodal solver
+
+Timestep 870 ends with TIME = 8.262387896 DT = 0.0133821866
+Timing summary:
+Advection  :0.8385443687 seconds
+MAC Proj   :0.2566010952 seconds
+Nodal Proj :0.9230577946 seconds
+Reactions  :14.75900984 seconds
+Misc       :0.3417201042 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.12023687
+
+Writing plotfile 870
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 11.25469184
+
+Writing checkpoint 870
+Writing checkpoint chk0000870
+Call to estdt for level 0 gives dt_lev = 0.01416789642
+Minimum estdt over all levels = 0.01416789642
+Call to estdt at beginning of step 871 gives dt =0.01416789642
+
+Timestep 871 starts with TIME = 8.262387896 DT = 0.01416789642
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.379329989e+10
+MLMG: Initial residual (resid0) = 6.379329989e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.276870231, 8.27182516e-11
+MLMG: Timers: Solve = 0.111708038 Iter = 0.108762419 Bottom = 0.005009457
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.379330005e+10
+MLMG: Initial residual (resid0) = 1.268886703e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.371132607, 8.419587328e-11
+MLMG: Timers: Solve = 0.103196556 Iter = 0.100647009 Bottom = 0.005139072
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.905680077e+10
+MLMG: Initial residual (resid0) = 9.905680077e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1050796509, 1.060801985e-12
+MLMG: Timers: Solve = 0.657318443 Iter = 0.651876844 Bottom = 0.004347559
+Done calling nodal solver
+
+Timestep 871 ends with TIME = 8.276555792 DT = 0.01416789642
+Timing summary:
+Advection  :0.8551783562 seconds
+MAC Proj   :0.2385520935 seconds
+Nodal Proj :0.92360425 seconds
+Reactions  :15.2091682 seconds
+Misc       :0.3427700996 seconds
+Base State :0 seconds
+Time to advance time step: 17.57056093
+Call to estdt for level 0 gives dt_lev = 0.01427717037
+Minimum estdt over all levels = 0.01427717037
+Call to estdt at beginning of step 872 gives dt =0.01427717037
+
+Timestep 872 starts with TIME = 8.276555792 DT = 0.01427717037
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.632095467e+10
+MLMG: Initial residual (resid0) = 6.632095467e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.069418344, 7.643765637e-11
+MLMG: Timers: Solve = 0.117906544 Iter = 0.115225205 Bottom = 0.005076758
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.63209554e+10
+MLMG: Initial residual (resid0) = 1.269570468e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.152646203, 7.769258105e-11
+MLMG: Timers: Solve = 0.123580835 Iter = 0.120840507 Bottom = 0.004977911
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.808744454e+10
+MLMG: Initial residual (resid0) = 9.808744454e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1072006226, 1.092908711e-12
+MLMG: Timers: Solve = 0.652343125 Iter = 0.647600699 Bottom = 0.004313052
+Done calling nodal solver
+
+Timestep 872 ends with TIME = 8.290832963 DT = 0.01427717037
+Timing summary:
+Advection  :0.835367918 seconds
+MAC Proj   :0.2604217529 seconds
+Nodal Proj :0.9139659405 seconds
+Reactions  :14.81116104 seconds
+Misc       :0.350284338 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.17269087
+Call to estdt for level 0 gives dt_lev = 0.01427124984
+Minimum estdt over all levels = 0.01427124984
+Call to estdt at beginning of step 873 gives dt =0.01427124984
+
+Timestep 873 starts with TIME = 8.290832963 DT = 0.01427124984
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.634971337e+10
+MLMG: Initial residual (resid0) = 6.634971337e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.786853752, 7.214580905e-11
+MLMG: Timers: Solve = 0.112637661 Iter = 0.109601149 Bottom = 0.005013104
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.63497134e+10
+MLMG: Initial residual (resid0) = 1.269130422e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.86500215, 7.332363473e-11
+MLMG: Timers: Solve = 0.111738074 Iter = 0.109005952 Bottom = 0.005039644
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.307600828e+10
+MLMG: Initial residual (resid0) = 9.307600828e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1080551147, 1.160934131e-12
+MLMG: Timers: Solve = 0.645532739 Iter = 0.640095062 Bottom = 0.004321576
+Done calling nodal solver
+
+Timestep 873 ends with TIME = 8.305104212 DT = 0.01427124984
+Timing summary:
+Advection  :0.9617652893 seconds
+MAC Proj   :0.2443230152 seconds
+Nodal Proj :0.9084877968 seconds
+Reactions  :14.7289691 seconds
+Misc       :0.3300299644 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.17511892
+Call to estdt for level 0 gives dt_lev = 0.01471043767
+Minimum estdt over all levels = 0.01471043767
+Call to estdt at beginning of step 874 gives dt =0.01471043767
+
+Timestep 874 starts with TIME = 8.305104212 DT = 0.01471043767
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.411252512e+10
+MLMG: Initial residual (resid0) = 6.411252512e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.443175789, 6.930277322e-11
+MLMG: Timers: Solve = 0.153351273 Iter = 0.150324274 Bottom = 0.004979488
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.411252458e+10
+MLMG: Initial residual (resid0) = 1.268738437e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.520131397, 7.050309479e-11
+MLMG: Timers: Solve = 0.106148996 Iter = 0.103367153 Bottom = 0.004961892
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.307447316e+10
+MLMG: Initial residual (resid0) = 9.307447316e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1117935181, 1.201118999e-12
+MLMG: Timers: Solve = 0.648378711 Iter = 0.64318218 Bottom = 0.004251823
+Done calling nodal solver
+
+Timestep 874 ends with TIME = 8.31981465 DT = 0.01471043767
+Timing summary:
+Advection  :0.8502109051 seconds
+MAC Proj   :0.2821171284 seconds
+Nodal Proj :0.9104497433 seconds
+Reactions  :14.81764817 seconds
+Misc       :0.3510439396 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.21285105
+Call to estdt for level 0 gives dt_lev = 0.01483833634
+Minimum estdt over all levels = 0.01483833634
+Call to estdt at beginning of step 875 gives dt =0.01483833634
+
+Timestep 875 starts with TIME = 8.31981465 DT = 0.01483833634
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.836453758e+10
+MLMG: Initial residual (resid0) = 6.836453758e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.113900447, 6.017594198e-11
+MLMG: Timers: Solve = 0.124113321 Iter = 0.120217417 Bottom = 0.004968711
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.83645378e+10
+MLMG: Initial residual (resid0) = 1.268799992e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.167682188, 6.096263241e-11
+MLMG: Timers: Solve = 0.114519601 Iter = 0.111724974 Bottom = 0.005096373
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.526095056e+10
+MLMG: Initial residual (resid0) = 9.526095056e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1128234863, 1.184362382e-12
+MLMG: Timers: Solve = 0.649718377 Iter = 0.644405251 Bottom = 0.00429912
+Done calling nodal solver
+
+Timestep 875 ends with TIME = 8.334652986 DT = 0.01483833634
+Timing summary:
+Advection  :0.8398220539 seconds
+MAC Proj   :0.2586090565 seconds
+Nodal Proj :0.9120080471 seconds
+Reactions  :15.17167425 seconds
+Misc       :0.349709034 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.53415394
+Call to estdt for level 0 gives dt_lev = 0.01453314847
+Minimum estdt over all levels = 0.01453314847
+Call to estdt at beginning of step 876 gives dt =0.01453314847
+
+Timestep 876 starts with TIME = 8.334652986 DT = 0.01453314847
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.608510233e+10
+MLMG: Initial residual (resid0) = 6.608510233e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.838523394, 5.808454945e-11
+MLMG: Timers: Solve = 0.127911526 Iter = 0.124906806 Bottom = 0.00495003
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.60851023e+10
+MLMG: Initial residual (resid0) = 1.267734934e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.845728509, 5.819357731e-11
+MLMG: Timers: Solve = 0.116111975 Iter = 0.113371629 Bottom = 0.005059576
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.519957248e+10
+MLMG: Initial residual (resid0) = 9.519957248e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1100711823, 1.15621509e-12
+MLMG: Timers: Solve = 0.661125073 Iter = 0.654296292 Bottom = 0.004276291
+Done calling nodal solver
+
+Timestep 876 ends with TIME = 8.349186135 DT = 0.01453314847
+Timing summary:
+Advection  :0.7920644283 seconds
+MAC Proj   :0.2635319233 seconds
+Nodal Proj :0.9161250591 seconds
+Reactions  :14.94113898 seconds
+Misc       :0.3417532444 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.25593019
+Call to estdt for level 0 gives dt_lev = 0.01464848995
+Minimum estdt over all levels = 0.01464848995
+Call to estdt at beginning of step 877 gives dt =0.01464848995
+
+Timestep 877 starts with TIME = 8.349186135 DT = 0.01464848995
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.671864913e+10
+MLMG: Initial residual (resid0) = 6.671864913e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.582409879, 5.369428077e-11
+MLMG: Timers: Solve = 0.116683238 Iter = 0.111485421 Bottom = 0.004885167
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.671864909e+10
+MLMG: Initial residual (resid0) = 1.266692837e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.568119371, 5.34800902e-11
+MLMG: Timers: Solve = 0.113676857 Iter = 0.110792764 Bottom = 0.005020793
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.329760455e+10
+MLMG: Initial residual (resid0) = 9.329760455e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1114673615, 1.194750519e-12
+MLMG: Timers: Solve = 0.641416668 Iter = 0.636555744 Bottom = 0.004279434
+Done calling nodal solver
+
+Timestep 877 ends with TIME = 8.363834625 DT = 0.01464848995
+Timing summary:
+Advection  :0.8288691044 seconds
+MAC Proj   :0.2496471405 seconds
+Nodal Proj :0.8975059986 seconds
+Reactions  :15.62624097 seconds
+Misc       :0.3494720459 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.95287299
+Call to estdt for level 0 gives dt_lev = 0.01500285458
+Minimum estdt over all levels = 0.01500285458
+Call to estdt at beginning of step 878 gives dt =0.01500285458
+
+Timestep 878 starts with TIME = 8.363834625 DT = 0.01500285458
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.246031821e+10
+MLMG: Initial residual (resid0) = 6.246031821e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.425026384, 5.483523752e-11
+MLMG: Timers: Solve = 0.115890457 Iter = 0.113031123 Bottom = 0.005010228
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.246031858e+10
+MLMG: Initial residual (resid0) = 1.266393327e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.443754924, 5.51350842e-11
+MLMG: Timers: Solve = 0.118004795 Iter = 0.1151954 Bottom = 0.005010214
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.56598463e+10
+MLMG: Initial residual (resid0) = 9.56598463e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1162528992, 1.21527374e-12
+MLMG: Timers: Solve = 0.660662073 Iter = 0.655445587 Bottom = 0.004354853
+Done calling nodal solver
+
+Timestep 878 ends with TIME = 8.378837479 DT = 0.01500285458
+Timing summary:
+Advection  :0.8441998959 seconds
+MAC Proj   :0.252820015 seconds
+Nodal Proj :0.9142897129 seconds
+Reactions  :15.32452106 seconds
+Misc       :0.3424136639 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.67985511
+Call to estdt for level 0 gives dt_lev = 0.01563478955
+Minimum estdt over all levels = 0.01563478955
+Call to estdt at beginning of step 879 gives dt =0.01563478955
+
+Timestep 879 starts with TIME = 8.378837479 DT = 0.01563478955
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.089626176e+10
+MLMG: Initial residual (resid0) = 7.089626176e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.242104, 5.983536924e-11
+MLMG: Timers: Solve = 0.122584773 Iter = 0.119878496 Bottom = 0.005010829
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.089626575e+10
+MLMG: Initial residual (resid0) = 1.266556161e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.303953082, 6.070775431e-11
+MLMG: Timers: Solve = 0.111919702 Iter = 0.109229537 Bottom = 0.004990733
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.041741193e+11
+MLMG: Initial residual (resid0) = 1.041741193e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1231184006, 1.18185209e-12
+MLMG: Timers: Solve = 0.663774484 Iter = 0.658787994 Bottom = 0.004287708
+Done calling nodal solver
+
+Timestep 879 ends with TIME = 8.394472269 DT = 0.01563478955
+Timing summary:
+Advection  :0.8500804901 seconds
+MAC Proj   :0.2541968822 seconds
+Nodal Proj :0.9009068012 seconds
+Reactions  :15.25675869 seconds
+Misc       :0.3488037586 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.61229777
+Call to estdt for level 0 gives dt_lev = 0.01615958238
+Minimum estdt over all levels = 0.01615958238
+Call to estdt at beginning of step 880 gives dt =0.01615958238
+
+Timestep 880 starts with TIME = 8.394472269 DT = 0.01615958238
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.623588431e+10
+MLMG: Initial residual (resid0) = 6.623588431e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.195015608, 7.843204121e-11
+MLMG: Timers: Solve = 0.117500199 Iter = 0.114788052 Bottom = 0.005034415
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.623578896e+10
+MLMG: Initial residual (resid0) = 1.266955731e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.217897878, 7.877762098e-11
+MLMG: Timers: Solve = 0.11983465 Iter = 0.116836813 Bottom = 0.005013076
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.101520387e+11
+MLMG: Initial residual (resid0) = 1.101520387e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1294555664, 1.175244398e-12
+MLMG: Timers: Solve = 0.658789198 Iter = 0.653735783 Bottom = 0.004354369
+Done calling nodal solver
+
+Timestep 880 ends with TIME = 8.410631851 DT = 0.01615958238
+Timing summary:
+Advection  :0.7974989414 seconds
+MAC Proj   :0.2578558922 seconds
+Nodal Proj :0.9210686684 seconds
+Reactions  :15.62241817 seconds
+Misc       :0.3558089733 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.95589495
+
+Writing plotfile 880
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 12.80770898
+
+Writing checkpoint 880
+Writing checkpoint chk0000880
+Call to estdt for level 0 gives dt_lev = 0.01602831989
+Minimum estdt over all levels = 0.01602831989
+Call to estdt at beginning of step 881 gives dt =0.01602831989
+
+Timestep 881 starts with TIME = 8.410631851 DT = 0.01602831989
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.673092677e+10
+MLMG: Initial residual (resid0) = 6.673092677e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.165076885, 9.23871012e-11
+MLMG: Timers: Solve = 0.114261223 Iter = 0.110968019 Bottom = 0.005032664
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.673092692e+10
+MLMG: Initial residual (resid0) = 1.266653487e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.23111445, 9.337671059e-11
+MLMG: Timers: Solve = 0.120271411 Iter = 0.117311135 Bottom = 0.005009061
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.112922798e+11
+MLMG: Initial residual (resid0) = 1.112922798e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1303348541, 1.171104181e-12
+MLMG: Timers: Solve = 0.649660022 Iter = 0.644752649 Bottom = 0.004311598
+Done calling nodal solver
+
+Timestep 881 ends with TIME = 8.426660171 DT = 0.01602831989
+Timing summary:
+Advection  :0.8249046803 seconds
+MAC Proj   :0.2541091442 seconds
+Nodal Proj :0.9114172459 seconds
+Reactions  :15.4761939 seconds
+Misc       :0.3479590416 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.8168571
+Call to estdt for level 0 gives dt_lev = 0.01610895708
+Minimum estdt over all levels = 0.01610895708
+Call to estdt at beginning of step 882 gives dt =0.01610895708
+
+Timestep 882 starts with TIME = 8.426660171 DT = 0.01610895708
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.486811973e+10
+MLMG: Initial residual (resid0) = 7.486811973e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.936237135, 9.264607097e-11
+MLMG: Timers: Solve = 0.120848592 Iter = 0.117715632 Bottom = 0.005035855
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.486812091e+10
+MLMG: Initial residual (resid0) = 1.263171104e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 7.094999602, 9.47666312e-11
+MLMG: Timers: Solve = 0.116495364 Iter = 0.113648296 Bottom = 0.004916978
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.080566817e+11
+MLMG: Initial residual (resid0) = 1.080566817e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1335811615, 1.236213804e-12
+MLMG: Timers: Solve = 0.657340905 Iter = 0.652157173 Bottom = 0.004306907
+Done calling nodal solver
+
+Timestep 882 ends with TIME = 8.442769128 DT = 0.01610895708
+Timing summary:
+Advection  :0.8348858356 seconds
+MAC Proj   :0.2565579414 seconds
+Nodal Proj :0.918749094 seconds
+Reactions  :15.42113328 seconds
+Misc       :0.3206520081 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.75355697
+Call to estdt for level 0 gives dt_lev = 0.01541971377
+Minimum estdt over all levels = 0.01541971377
+Call to estdt at beginning of step 883 gives dt =0.01541971377
+
+Timestep 883 starts with TIME = 8.442769128 DT = 0.01541971377
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.310489432e+10
+MLMG: Initial residual (resid0) = 7.310489432e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7316521147, 1.000825077e-11
+MLMG: Timers: Solve = 0.164818461 Iter = 0.161972598 Bottom = 0.005564196
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.310489596e+10
+MLMG: Initial residual (resid0) = 1.261831703e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7547666152, 1.03244332e-11
+MLMG: Timers: Solve = 0.126228087 Iter = 0.123442643 Bottom = 0.00551743
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.74837833e+10
+MLMG: Initial residual (resid0) = 9.74837833e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1299686432, 1.333233475e-12
+MLMG: Timers: Solve = 0.675163309 Iter = 0.669816841 Bottom = 0.004348889
+Done calling nodal solver
+
+Timestep 883 ends with TIME = 8.458188842 DT = 0.01541971377
+Timing summary:
+Advection  :0.8456037045 seconds
+MAC Proj   :0.3095598221 seconds
+Nodal Proj :0.9363758564 seconds
+Reactions  :15.55416512 seconds
+Misc       :0.325565815 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.9746139
+Call to estdt for level 0 gives dt_lev = 0.01482077812
+Minimum estdt over all levels = 0.01482077812
+Call to estdt at beginning of step 884 gives dt =0.01482077812
+
+Timestep 884 starts with TIME = 8.458188842 DT = 0.01482077812
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.43033681e+10
+MLMG: Initial residual (resid0) = 7.43033681e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7679986265, 1.033598673e-11
+MLMG: Timers: Solve = 0.133419681 Iter = 0.130636976 Bottom = 0.00553089
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.430337096e+10
+MLMG: Initial residual (resid0) = 1.25954904e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7939918952, 1.068581257e-11
+MLMG: Timers: Solve = 0.144763098 Iter = 0.142027474 Bottom = 0.005531341
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.153495202e+10
+MLMG: Initial residual (resid0) = 9.153495202e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1272659302, 1.390353383e-12
+MLMG: Timers: Solve = 0.673673287 Iter = 0.668194573 Bottom = 0.004334752
+Done calling nodal solver
+
+Timestep 884 ends with TIME = 8.47300962 DT = 0.01482077812
+Timing summary:
+Advection  :0.843031168 seconds
+MAC Proj   :0.2978680134 seconds
+Nodal Proj :0.927284956 seconds
+Reactions  :15.14749622 seconds
+Misc       :0.3520052433 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.56933188
+Call to estdt for level 0 gives dt_lev = 0.01485809106
+Minimum estdt over all levels = 0.01485809106
+Call to estdt at beginning of step 885 gives dt =0.01485809106
+
+Timestep 885 starts with TIME = 8.47300962 DT = 0.01485809106
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.204281554e+10
+MLMG: Initial residual (resid0) = 7.204281554e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7854156846, 1.090206815e-11
+MLMG: Timers: Solve = 0.128656698 Iter = 0.125937754 Bottom = 0.005505339
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.204281484e+10
+MLMG: Initial residual (resid0) = 1.257840354e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.8117709707, 1.126789636e-11
+MLMG: Timers: Solve = 0.13758561 Iter = 0.134512695 Bottom = 0.00562394
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.807276956e+10
+MLMG: Initial residual (resid0) = 8.807276956e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1293306351, 1.468452005e-12
+MLMG: Timers: Solve = 0.651639679 Iter = 0.645450474 Bottom = 0.00432078
+Done calling nodal solver
+
+Timestep 885 ends with TIME = 8.487867711 DT = 0.01485809106
+Timing summary:
+Advection  :0.8444850445 seconds
+MAC Proj   :0.288859129 seconds
+Nodal Proj :0.9065761566 seconds
+Reactions  :15.34298301 seconds
+Misc       :0.3491578102 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.7337749
+Call to estdt for level 0 gives dt_lev = 0.01424992542
+Minimum estdt over all levels = 0.01424992542
+Call to estdt at beginning of step 886 gives dt =0.01424992542
+
+Timestep 886 starts with TIME = 8.487867711 DT = 0.01424992542
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.833016702e+10
+MLMG: Initial residual (resid0) = 7.833016702e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.779872701, 9.956224156e-12
+MLMG: Timers: Solve = 0.126634651 Iter = 0.123691741 Bottom = 0.005536656
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.833016686e+10
+MLMG: Initial residual (resid0) = 1.256742101e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.8068433409, 1.030054414e-11
+MLMG: Timers: Solve = 0.125224022 Iter = 0.122544263 Bottom = 0.005661885
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.867291901e+10
+MLMG: Initial residual (resid0) = 8.867291901e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.12570858, 1.417665973e-12
+MLMG: Timers: Solve = 0.684796848 Iter = 0.679718454 Bottom = 0.004263557
+Done calling nodal solver
+
+Timestep 886 ends with TIME = 8.502117637 DT = 0.01424992542
+Timing summary:
+Advection  :0.8415410519 seconds
+MAC Proj   :0.2710108757 seconds
+Nodal Proj :0.9472169876 seconds
+Reactions  :14.57868004 seconds
+Misc       :0.3525509834 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.99253798
+Call to estdt for level 0 gives dt_lev = 0.01354352124
+Minimum estdt over all levels = 0.01354352124
+Call to estdt at beginning of step 887 gives dt =0.01354352124
+
+Timestep 887 starts with TIME = 8.502117637 DT = 0.01354352124
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.673852261e+10
+MLMG: Initial residual (resid0) = 7.673852261e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.755516255, 9.845332296e-12
+MLMG: Timers: Solve = 0.130965187 Iter = 0.12794984 Bottom = 0.005548575
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.673852246e+10
+MLMG: Initial residual (resid0) = 1.254617264e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7814665833, 1.018349791e-11
+MLMG: Timers: Solve = 0.127461341 Iter = 0.124858385 Bottom = 0.005603278
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.217073464e+10
+MLMG: Initial residual (resid0) = 8.217073464e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1203916073, 1.465139722e-12
+MLMG: Timers: Solve = 0.672506244 Iter = 0.667179912 Bottom = 0.004201949
+Done calling nodal solver
+
+Timestep 887 ends with TIME = 8.515661158 DT = 0.01354352124
+Timing summary:
+Advection  :0.8366160393 seconds
+MAC Proj   :0.2782318592 seconds
+Nodal Proj :0.93653512 seconds
+Reactions  :14.5473628 seconds
+Misc       :0.3494815826 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.94922495
+Call to estdt for level 0 gives dt_lev = 0.01309149033
+Minimum estdt over all levels = 0.01309149033
+Call to estdt at beginning of step 888 gives dt =0.01309149033
+
+Timestep 888 starts with TIME = 8.515661158 DT = 0.01309149033
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.060304483e+10
+MLMG: Initial residual (resid0) = 7.060304483e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7182963914, 1.017373108e-11
+MLMG: Timers: Solve = 0.134558729 Iter = 0.131812648 Bottom = 0.00554344
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.060304238e+10
+MLMG: Initial residual (resid0) = 1.252584825e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.7416447978, 1.050443115e-11
+MLMG: Timers: Solve = 0.132995663 Iter = 0.130304426 Bottom = 0.005462886
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 7.928374425e+10
+MLMG: Initial residual (resid0) = 7.928374425e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1166372299, 1.471136751e-12
+MLMG: Timers: Solve = 0.653637406 Iter = 0.648763697 Bottom = 0.004045142
+Done calling nodal solver
+
+Timestep 888 ends with TIME = 8.528752648 DT = 0.01309149033
+Timing summary:
+Advection  :0.8247430325 seconds
+MAC Proj   :0.2884008884 seconds
+Nodal Proj :0.9184691906 seconds
+Reactions  :14.86907005 seconds
+Misc       :0.3366799355 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.23917913
+Call to estdt for level 0 gives dt_lev = 0.01280136137
+Minimum estdt over all levels = 0.01280136137
+Call to estdt at beginning of step 889 gives dt =0.01280136137
+
+Timestep 889 starts with TIME = 8.528752648 DT = 0.01280136137
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.424484979e+10
+MLMG: Initial residual (resid0) = 7.424484979e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.932741199, 9.337672874e-11
+MLMG: Timers: Solve = 0.131728653 Iter = 0.128197898 Bottom = 0.004883203
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.424485223e+10
+MLMG: Initial residual (resid0) = 1.251063822e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 7.15984294, 9.643554704e-11
+MLMG: Timers: Solve = 0.119043983 Iter = 0.116253879 Bottom = 0.004812741
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 7.570094989e+10
+MLMG: Initial residual (resid0) = 7.570094989e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1137237549, 1.502276458e-12
+MLMG: Timers: Solve = 0.671287612 Iter = 0.666430104 Bottom = 0.004096776
+Done calling nodal solver
+
+Timestep 889 ends with TIME = 8.54155401 DT = 0.01280136137
+Timing summary:
+Advection  :0.8415784836 seconds
+MAC Proj   :0.2701869011 seconds
+Nodal Proj :0.931814909 seconds
+Reactions  :14.56267095 seconds
+Misc       :0.3518583775 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.96165991
+Call to estdt for level 0 gives dt_lev = 0.01260920412
+Minimum estdt over all levels = 0.01260920412
+Call to estdt at beginning of step 890 gives dt =0.01260920412
+
+Timestep 890 starts with TIME = 8.54155401 DT = 0.01260920412
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.047185794e+10
+MLMG: Initial residual (resid0) = 7.047185794e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.273206166, 8.901718145e-11
+MLMG: Timers: Solve = 0.118883037 Iter = 0.113833038 Bottom = 0.004859165
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.047186258e+10
+MLMG: Initial residual (resid0) = 1.24985883e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.491478723, 9.21144764e-11
+MLMG: Timers: Solve = 0.112965373 Iter = 0.110307411 Bottom = 0.004745603
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 7.027559001e+10
+MLMG: Initial residual (resid0) = 7.027559001e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1108446121, 1.577284689e-12
+MLMG: Timers: Solve = 0.646373657 Iter = 0.641429831 Bottom = 0.004186781
+Done calling nodal solver
+
+Timestep 890 ends with TIME = 8.554163214 DT = 0.01260920412
+Timing summary:
+Advection  :0.8141942024 seconds
+MAC Proj   :0.2515621185 seconds
+Nodal Proj :0.9091198444 seconds
+Reactions  :14.68443203 seconds
+Misc       :0.3493070602 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.01023388
+
+Writing plotfile 890
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 11.96836305
+
+Writing checkpoint 890
+Writing checkpoint chk0000890
+Call to estdt for level 0 gives dt_lev = 0.01258228426
+Minimum estdt over all levels = 0.01258228426
+Call to estdt at beginning of step 891 gives dt =0.01258228426
+
+Timestep 891 starts with TIME = 8.554163214 DT = 0.01258228426
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.759903805e+10
+MLMG: Initial residual (resid0) = 7.759903805e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.529359154, 7.125551157e-11
+MLMG: Timers: Solve = 0.112404185 Iter = 0.108716187 Bottom = 0.004870227
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.759903583e+10
+MLMG: Initial residual (resid0) = 1.2495865e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.72196535, 7.373758306e-11
+MLMG: Timers: Solve = 0.115155903 Iter = 0.112304937 Bottom = 0.004762459
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 6.747164941e+10
+MLMG: Initial residual (resid0) = 6.747164941e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1087617874, 1.611962778e-12
+MLMG: Timers: Solve = 0.663111494 Iter = 0.656421016 Bottom = 0.004259217
+Done calling nodal solver
+
+Timestep 891 ends with TIME = 8.566745498 DT = 0.01258228426
+Timing summary:
+Advection  :0.8558189869 seconds
+MAC Proj   :0.2471029758 seconds
+Nodal Proj :0.9258327484 seconds
+Reactions  :14.95761323 seconds
+Misc       :0.3494451046 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.3370471
+Call to estdt for level 0 gives dt_lev = 0.01269377299
+Minimum estdt over all levels = 0.01269377299
+Call to estdt at beginning of step 892 gives dt =0.01269377299
+
+Timestep 892 starts with TIME = 8.566745498 DT = 0.01269377299
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.915207706e+10
+MLMG: Initial residual (resid0) = 7.915207706e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.718103652, 5.960808393e-11
+MLMG: Timers: Solve = 0.119093742 Iter = 0.116136604 Bottom = 0.00483025
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.915204441e+10
+MLMG: Initial residual (resid0) = 1.249601182e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.868296698, 6.150563431e-11
+MLMG: Timers: Solve = 0.125564925 Iter = 0.122809802 Bottom = 0.004748851
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 6.812593574e+10
+MLMG: Initial residual (resid0) = 6.812593574e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1073012352, 1.575042369e-12
+MLMG: Timers: Solve = 0.649996261 Iter = 0.64527289 Bottom = 0.004712353
+Done calling nodal solver
+
+Timestep 892 ends with TIME = 8.579439271 DT = 0.01269377299
+Timing summary:
+Advection  :0.8552222252 seconds
+MAC Proj   :0.2638509274 seconds
+Nodal Proj :0.8703169823 seconds
+Reactions  :14.86183023 seconds
+Misc       :0.3378632069 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.190238
+Call to estdt for level 0 gives dt_lev = 0.01288171852
+Minimum estdt over all levels = 0.01288171852
+Call to estdt at beginning of step 893 gives dt =0.01288171852
+
+Timestep 893 starts with TIME = 8.579439271 DT = 0.01288171852
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.583707475e+10
+MLMG: Initial residual (resid0) = 8.583707475e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.820371458, 4.450724199e-11
+MLMG: Timers: Solve = 0.124658714 Iter = 0.121913687 Bottom = 0.004839033
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.583707403e+10
+MLMG: Initial residual (resid0) = 1.249630333e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.949799276, 4.601507357e-11
+MLMG: Timers: Solve = 0.124230713 Iter = 0.121569685 Bottom = 0.004872359
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 7.41030338e+10
+MLMG: Initial residual (resid0) = 7.41030338e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1056056023, 1.425118471e-12
+MLMG: Timers: Solve = 0.659423952 Iter = 0.65427655 Bottom = 0.004617829
+Done calling nodal solver
+
+Timestep 893 ends with TIME = 8.59232099 DT = 0.01288171852
+Timing summary:
+Advection  :0.8402028084 seconds
+MAC Proj   :0.2688958645 seconds
+Nodal Proj :0.917016983 seconds
+Reactions  :15.04922295 seconds
+Misc       :0.3508667946 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.42761111
+Call to estdt for level 0 gives dt_lev = 0.01325880049
+Minimum estdt over all levels = 0.01325880049
+Call to estdt at beginning of step 894 gives dt =0.01325880049
+
+Timestep 894 starts with TIME = 8.59232099 DT = 0.01325880049
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.164631086e+10
+MLMG: Initial residual (resid0) = 8.164631086e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.712766333, 5.772173027e-11
+MLMG: Timers: Solve = 0.11501677 Iter = 0.111258371 Bottom = 0.004814184
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.164629988e+10
+MLMG: Initial residual (resid0) = 1.249784507e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.645381399, 5.689641057e-11
+MLMG: Timers: Solve = 0.116991823 Iter = 0.114206831 Bottom = 0.004879482
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 7.87916495e+10
+MLMG: Initial residual (resid0) = 7.87916495e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1047277451, 1.329173151e-12
+MLMG: Timers: Solve = 0.653022083 Iter = 0.647623895 Bottom = 0.004441845
+Done calling nodal solver
+
+Timestep 894 ends with TIME = 8.60557979 DT = 0.01325880049
+Timing summary:
+Advection  :0.8304233551 seconds
+MAC Proj   :0.2522289753 seconds
+Nodal Proj :0.9132838249 seconds
+Reactions  :15.33747911 seconds
+Misc       :0.3504891396 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.68500805
+Call to estdt for level 0 gives dt_lev = 0.01381341117
+Minimum estdt over all levels = 0.01381341117
+Call to estdt at beginning of step 895 gives dt =0.01381341117
+
+Timestep 895 starts with TIME = 8.60557979 DT = 0.01381341117
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.822798007e+10
+MLMG: Initial residual (resid0) = 7.822798007e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.819478163, 7.439126202e-11
+MLMG: Timers: Solve = 0.116841533 Iter = 0.114025223 Bottom = 0.00482201
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.822798141e+10
+MLMG: Initial residual (resid0) = 1.244765273e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.758570951, 7.361267474e-11
+MLMG: Timers: Solve = 0.137141511 Iter = 0.13432893 Bottom = 0.004810594
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.352136973e+10
+MLMG: Initial residual (resid0) = 8.352136973e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.104490757, 1.251066132e-12
+MLMG: Timers: Solve = 0.665592023 Iter = 0.660603932 Bottom = 0.004462464
+Done calling nodal solver
+
+Timestep 895 ends with TIME = 8.619393201 DT = 0.01381341117
+Timing summary:
+Advection  :0.8465838432 seconds
+MAC Proj   :0.2756381035 seconds
+Nodal Proj :0.9285578728 seconds
+Reactions  :15.15972185 seconds
+Misc       :0.3105502129 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.52311802
+Call to estdt for level 0 gives dt_lev = 0.01453546785
+Minimum estdt over all levels = 0.01453546785
+Call to estdt at beginning of step 896 gives dt =0.01453546785
+
+Timestep 896 starts with TIME = 8.619393201 DT = 0.01453546785
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.605182709e+10
+MLMG: Initial residual (resid0) = 8.605182709e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.96368606, 8.092432544e-11
+MLMG: Timers: Solve = 0.125692228 Iter = 0.122750093 Bottom = 0.004870624
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.605183144e+10
+MLMG: Initial residual (resid0) = 1.245093369e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.921000753, 8.042827953e-11
+MLMG: Timers: Solve = 0.113267494 Iter = 0.110318255 Bottom = 0.004899814
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.27406442e+10
+MLMG: Initial residual (resid0) = 9.27406442e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1047639847, 1.129644781e-12
+MLMG: Timers: Solve = 0.659348059 Iter = 0.65437839 Bottom = 0.004396697
+Done calling nodal solver
+
+Timestep 896 ends with TIME = 8.633928669 DT = 0.01453546785
+Timing summary:
+Advection  :0.8244841099 seconds
+MAC Proj   :0.259734869 seconds
+Nodal Proj :0.9237310886 seconds
+Reactions  :15.67910409 seconds
+Misc       :0.3077673912 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.99595308
+Call to estdt for level 0 gives dt_lev = 0.01559959432
+Minimum estdt over all levels = 0.01559959432
+Call to estdt at beginning of step 897 gives dt =0.01559959432
+
+Timestep 897 starts with TIME = 8.633928669 DT = 0.01559959432
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.408966085e+10
+MLMG: Initial residual (resid0) = 8.408966085e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 8.101083431, 9.633863841e-11
+MLMG: Timers: Solve = 0.115303732 Iter = 0.111926628 Bottom = 0.005086634
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.408966214e+10
+MLMG: Initial residual (resid0) = 1.245672829e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 8.10520796, 9.638768612e-11
+MLMG: Timers: Solve = 0.137349787 Iter = 0.133958532 Bottom = 0.00484453
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.034716813e+11
+MLMG: Initial residual (resid0) = 1.034716813e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1068537235, 1.032685679e-12
+MLMG: Timers: Solve = 0.649753642 Iter = 0.644845754 Bottom = 0.004418448
+Done calling nodal solver
+
+Timestep 897 ends with TIME = 8.649528263 DT = 0.01559959432
+Timing summary:
+Advection  :0.841080904 seconds
+MAC Proj   :0.2720432281 seconds
+Nodal Proj :0.9104859829 seconds
+Reactions  :16.11393499 seconds
+Misc       :0.3575210571 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.49684
+Call to estdt for level 0 gives dt_lev = 0.01592369387
+Minimum estdt over all levels = 0.01592369387
+Call to estdt at beginning of step 898 gives dt =0.01592369387
+
+Timestep 898 starts with TIME = 8.649528263 DT = 0.01592369387
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.284546617e+10
+MLMG: Initial residual (resid0) = 8.284546617e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.9011346921, 1.087729641e-11
+MLMG: Timers: Solve = 0.141167665 Iter = 0.138124566 Bottom = 0.005625559
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.284547184e+10
+MLMG: Initial residual (resid0) = 1.246083862e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.9062338863, 1.093884634e-11
+MLMG: Timers: Solve = 0.123952442 Iter = 0.12091639 Bottom = 0.005546674
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.106581753e+11
+MLMG: Initial residual (resid0) = 1.106581753e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1039794683, 9.396456074e-13
+MLMG: Timers: Solve = 0.65777119 Iter = 0.652399294 Bottom = 0.00425184
+Done calling nodal solver
+
+Timestep 898 ends with TIME = 8.665451957 DT = 0.01592369387
+Timing summary:
+Advection  :0.8176968098 seconds
+MAC Proj   :0.2861690521 seconds
+Nodal Proj :0.9152510166 seconds
+Reactions  :16.12339425 seconds
+Misc       :0.3507204056 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.49488497
+Call to estdt for level 0 gives dt_lev = 0.01579566061
+Minimum estdt over all levels = 0.01579566061
+Call to estdt at beginning of step 899 gives dt =0.01579566061
+
+Timestep 899 starts with TIME = 8.665451957 DT = 0.01579566061
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.819187246e+10
+MLMG: Initial residual (resid0) = 7.819187246e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.9887955664, 1.264575889e-11
+MLMG: Timers: Solve = 0.118607344 Iter = 0.115898901 Bottom = 0.005607986
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.819187226e+10
+MLMG: Initial residual (resid0) = 1.245080454e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.000555512, 1.27961575e-11
+MLMG: Timers: Solve = 0.134563834 Iter = 0.131638589 Bottom = 0.005486934
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.107055989e+11
+MLMG: Initial residual (resid0) = 1.107055989e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09915065765, 8.956245989e-13
+MLMG: Timers: Solve = 0.656903201 Iter = 0.651518951 Bottom = 0.004312986
+Done calling nodal solver
+
+Timestep 899 ends with TIME = 8.681247618 DT = 0.01579566061
+Timing summary:
+Advection  :0.7936210632 seconds
+MAC Proj   :0.2756788731 seconds
+Nodal Proj :0.9157819748 seconds
+Reactions  :15.73694396 seconds
+Misc       :0.3184490204 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 18.04156184
+Call to estdt for level 0 gives dt_lev = 0.01500650341
+Minimum estdt over all levels = 0.01500650341
+Call to estdt at beginning of step 900 gives dt =0.01500650341
+
+Timestep 900 starts with TIME = 8.681247618 DT = 0.01500650341
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.608902866e+10
+MLMG: Initial residual (resid0) = 7.608902866e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.055615168, 1.387342153e-11
+MLMG: Timers: Solve = 0.134347712 Iter = 0.131325117 Bottom = 0.005683698
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.608902896e+10
+MLMG: Initial residual (resid0) = 1.242722766e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.071898069, 1.408741949e-11
+MLMG: Timers: Solve = 0.131914101 Iter = 0.129286536 Bottom = 0.00544068
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.027483635e+11
+MLMG: Initial residual (resid0) = 1.027483635e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09134912491, 8.890567383e-13
+MLMG: Timers: Solve = 0.660179374 Iter = 0.653386137 Bottom = 0.004317042
+Done calling nodal solver
+
+Timestep 900 ends with TIME = 8.696254121 DT = 0.01500650341
+Timing summary:
+Advection  :0.8355772495 seconds
+MAC Proj   :0.2853829861 seconds
+Nodal Proj :0.897810936 seconds
+Reactions  :15.55937433 seconds
+Misc       :0.3501808643 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.92984915
+
+Writing plotfile 900
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 11.77631497
+
+Writing checkpoint 900
+Writing checkpoint chk0000900
+Call to estdt for level 0 gives dt_lev = 0.0144325817
+Minimum estdt over all levels = 0.0144325817
+Call to estdt at beginning of step 901 gives dt =0.0144325817
+
+Timestep 901 starts with TIME = 8.696254121 DT = 0.0144325817
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.291805764e+10
+MLMG: Initial residual (resid0) = 7.291805764e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.099788448, 1.508252528e-11
+MLMG: Timers: Solve = 0.135348042 Iter = 0.132580679 Bottom = 0.005647029
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.291805483e+10
+MLMG: Initial residual (resid0) = 1.24007769e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.118357262, 1.533717903e-11
+MLMG: Timers: Solve = 0.140996 Iter = 0.137974942 Bottom = 0.005513104
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.36076184e+10
+MLMG: Initial residual (resid0) = 9.36076184e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08653402328, 9.244335532e-13
+MLMG: Timers: Solve = 0.645437555 Iter = 0.640590316 Bottom = 0.00436605
+Done calling nodal solver
+
+Timestep 901 ends with TIME = 8.710686703 DT = 0.0144325817
+Timing summary:
+Advection  :0.8352482319 seconds
+MAC Proj   :0.2955749035 seconds
+Nodal Proj :0.8885931969 seconds
+Reactions  :15.47800398 seconds
+Misc       :0.3507726192 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.84973407
+Call to estdt for level 0 gives dt_lev = 0.01409019403
+Minimum estdt over all levels = 0.01409019403
+Call to estdt at beginning of step 902 gives dt =0.01409019403
+
+Timestep 902 starts with TIME = 8.710686703 DT = 0.01409019403
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.926520062e+10
+MLMG: Initial residual (resid0) = 7.926520062e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.124893563, 1.419151852e-11
+MLMG: Timers: Solve = 0.117683253 Iter = 0.114959713 Bottom = 0.005750044
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.926519442e+10
+MLMG: Initial residual (resid0) = 1.238054238e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.141088359, 1.43958312e-11
+MLMG: Timers: Solve = 0.122306199 Iter = 0.119582172 Bottom = 0.005510284
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.678812394e+10
+MLMG: Initial residual (resid0) = 9.678812394e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08363389969, 8.640925796e-13
+MLMG: Timers: Solve = 0.664962172 Iter = 0.660204157 Bottom = 0.004367843
+Done calling nodal solver
+
+Timestep 902 ends with TIME = 8.724776897 DT = 0.01409019403
+Timing summary:
+Advection  :0.8475217819 seconds
+MAC Proj   :0.2590179443 seconds
+Nodal Proj :0.9233899117 seconds
+Reactions  :15.20281577 seconds
+Misc       :0.3490834236 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.58314896
+Call to estdt for level 0 gives dt_lev = 0.01392249802
+Minimum estdt over all levels = 0.01392249802
+Call to estdt at beginning of step 903 gives dt =0.01392249802
+
+Timestep 903 starts with TIME = 8.724776897 DT = 0.01392249802
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.802834049e+10
+MLMG: Initial residual (resid0) = 7.802834049e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.125057565, 1.44185761e-11
+MLMG: Timers: Solve = 0.125407879 Iter = 0.122696475 Bottom = 0.005656088
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.802833889e+10
+MLMG: Initial residual (resid0) = 1.236371435e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.140438698, 1.461569879e-11
+MLMG: Timers: Solve = 0.12883614 Iter = 0.126256204 Bottom = 0.005454908
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.040721074e+11
+MLMG: Initial residual (resid0) = 1.040721074e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08360099792, 8.032987897e-13
+MLMG: Timers: Solve = 0.652945574 Iter = 0.648167862 Bottom = 0.004473915
+Done calling nodal solver
+
+Timestep 903 ends with TIME = 8.738699395 DT = 0.01392249802
+Timing summary:
+Advection  :0.848688364 seconds
+MAC Proj   :0.2742929459 seconds
+Nodal Proj :0.9020149708 seconds
+Reactions  :15.11090183 seconds
+Misc       :0.3364200592 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.47339916
+Call to estdt for level 0 gives dt_lev = 0.01389299502
+Minimum estdt over all levels = 0.01389299502
+Call to estdt at beginning of step 904 gives dt =0.01389299502
+
+Timestep 904 starts with TIME = 8.738699395 DT = 0.01389299502
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.15286854e+10
+MLMG: Initial residual (resid0) = 7.15286854e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.099180989, 1.536699553e-11
+MLMG: Timers: Solve = 0.124622255 Iter = 0.121792187 Bottom = 0.00565642
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.152868316e+10
+MLMG: Initial residual (resid0) = 1.235081281e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.118759481, 1.564071127e-11
+MLMG: Timers: Solve = 0.123526716 Iter = 0.120715149 Bottom = 0.00553797
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.095871438e+11
+MLMG: Initial residual (resid0) = 1.095871438e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08722782135, 7.959676499e-13
+MLMG: Timers: Solve = 0.649918657 Iter = 0.645235062 Bottom = 0.004340257
+Done calling nodal solver
+
+Timestep 904 ends with TIME = 8.75259239 DT = 0.01389299502
+Timing summary:
+Advection  :0.8368489742 seconds
+MAC Proj   :0.2681429386 seconds
+Nodal Proj :0.9106302261 seconds
+Reactions  :15.24528909 seconds
+Misc       :0.3542914391 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.61642599
+Call to estdt for level 0 gives dt_lev = 0.01402740409
+Minimum estdt over all levels = 0.01402740409
+Call to estdt at beginning of step 905 gives dt =0.01402740409
+
+Timestep 905 starts with TIME = 8.75259239 DT = 0.01402740409
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.533599807e+10
+MLMG: Initial residual (resid0) = 7.533599807e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.060442701, 1.407617511e-11
+MLMG: Timers: Solve = 0.130553548 Iter = 0.127721676 Bottom = 0.005705695
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.533599586e+10
+MLMG: Initial residual (resid0) = 1.234009195e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.08193223, 1.436142468e-11
+MLMG: Timers: Solve = 0.133621436 Iter = 0.130931103 Bottom = 0.00541369
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.129584485e+11
+MLMG: Initial residual (resid0) = 1.129584485e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09111690521, 8.066409055e-13
+MLMG: Timers: Solve = 0.660697899 Iter = 0.654679358 Bottom = 0.004423253
+Done calling nodal solver
+
+Timestep 905 ends with TIME = 8.766619794 DT = 0.01402740409
+Timing summary:
+Advection  :0.8183019161 seconds
+MAC Proj   :0.2840998173 seconds
+Nodal Proj :0.9236638546 seconds
+Reactions  :15.7631681 seconds
+Misc       :0.3518691063 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.14247894
+Call to estdt for level 0 gives dt_lev = 0.01428111687
+Minimum estdt over all levels = 0.01428111687
+Call to estdt at beginning of step 906 gives dt =0.01428111687
+
+Timestep 906 starts with TIME = 8.766619794 DT = 0.01428111687
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.073245008e+10
+MLMG: Initial residual (resid0) = 8.073245008e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.99796113, 1.236133833e-11
+MLMG: Timers: Solve = 0.135723476 Iter = 0.132970001 Bottom = 0.005636572
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.073245061e+10
+MLMG: Initial residual (resid0) = 1.233217217e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 1.022286573, 1.266264762e-11
+MLMG: Timers: Solve = 0.138818805 Iter = 0.135842015 Bottom = 0.005462372
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.13834574e+11
+MLMG: Initial residual (resid0) = 1.13834574e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09477686882, 8.325842097e-13
+MLMG: Timers: Solve = 0.667942641 Iter = 0.662840406 Bottom = 0.004489306
+Done calling nodal solver
+
+Timestep 906 ends with TIME = 8.780900911 DT = 0.01428111687
+Timing summary:
+Advection  :0.8364491463 seconds
+MAC Proj   :0.2942678928 seconds
+Nodal Proj :0.9336631298 seconds
+Reactions  :16.00494003 seconds
+Misc       :0.3520259857 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.42269707
+Call to estdt for level 0 gives dt_lev = 0.0144749689
+Minimum estdt over all levels = 0.0144749689
+Call to estdt at beginning of step 907 gives dt =0.0144749689
+
+Timestep 907 starts with TIME = 8.780900911 DT = 0.0144749689
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.414431859e+10
+MLMG: Initial residual (resid0) = 7.414431859e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.9152030563, 1.234353587e-11
+MLMG: Timers: Solve = 0.124730707 Iter = 0.121850535 Bottom = 0.00564886
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.414432002e+10
+MLMG: Initial residual (resid0) = 1.232515633e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.939893363, 1.267653898e-11
+MLMG: Timers: Solve = 0.122070258 Iter = 0.119160767 Bottom = 0.005563652
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+ DVODE: maximum number of steps taken before reaching TOUT
+ xinlong_state:::::::::::::::   istate =           -1
+ inlong_state in Microphysics/interface/burner.F90 =          -1
+ an_real in burner_loop_sphr() =   -1.0000000000000000     
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+xinlong_state = -5, skip this burn
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.111343757e+11
+MLMG: Initial residual (resid0) = 1.111343757e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09682607651, 8.712522649e-13
+MLMG: Timers: Solve = 0.659452112 Iter = 0.653538421 Bottom = 0.004359239
+Done calling nodal solver
+
+Timestep 907 ends with TIME = 8.79537588 DT = 0.0144749689
+Timing summary:
+Advection  :0.8483827114 seconds
+MAC Proj   :0.2659990788 seconds
+Nodal Proj :0.9222319126 seconds
+Reactions  :15.49721169 seconds
+Misc       :0.3503963947 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.88574815
+Call to estdt for level 0 gives dt_lev = 0.01449878442
+Minimum estdt over all levels = 0.01449878442
+Call to estdt at beginning of step 908 gives dt =0.01449878442
+
+Timestep 908 starts with TIME = 8.79537588 DT = 0.01449878442
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.65789455e+10
+MLMG: Initial residual (resid0) = 7.65789455e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.8136978652, 1.062560812e-11
+MLMG: Timers: Solve = 0.125259838 Iter = 0.121899473 Bottom = 0.005589875
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.657894567e+10
+MLMG: Initial residual (resid0) = 1.231584989e+10
+MLMG: Final Iter. 9 resid, resid/bnorm = 0.8370352481, 1.093035743e-11
+MLMG: Timers: Solve = 0.130722173 Iter = 0.127629893 Bottom = 0.005539838
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.059817811e+11
+MLMG: Initial residual (resid0) = 1.059817811e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09658503532, 9.113362162e-13
+MLMG: Timers: Solve = 0.661855726 Iter = 0.654773998 Bottom = 0.004457892
+Done calling nodal solver
+
+Timestep 908 ends with TIME = 8.809874664 DT = 0.01449878442
+Timing summary:
+Advection  :0.8350698948 seconds
+MAC Proj   :0.2783069611 seconds
+Nodal Proj :0.9250459671 seconds
+Reactions  :15.67289877 seconds
+Misc       :0.3123071194 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 18.02675009
+Call to estdt for level 0 gives dt_lev = 0.0145647525
+Minimum estdt over all levels = 0.0145647525
+Call to estdt at beginning of step 909 gives dt =0.0145647525
+
+Timestep 909 starts with TIME = 8.809874664 DT = 0.0145647525
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.569677153e+10
+MLMG: Initial residual (resid0) = 7.569677153e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 7.069035823, 9.338622613e-11
+MLMG: Timers: Solve = 0.11869393 Iter = 0.115973408 Bottom = 0.005165406
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.569677482e+10
+MLMG: Initial residual (resid0) = 1.230409302e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 7.306422939, 9.652224888e-11
+MLMG: Timers: Solve = 0.110005887 Iter = 0.107193479 Bottom = 0.004939788
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.042557287e+11
+MLMG: Initial residual (resid0) = 1.042557287e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09515857697, 9.127419486e-13
+MLMG: Timers: Solve = 0.660267396 Iter = 0.654768922 Bottom = 0.004301773
+Done calling nodal solver
+
+Timestep 909 ends with TIME = 8.824439417 DT = 0.0145647525
+Timing summary:
+Advection  :0.831717968 seconds
+MAC Proj   :0.2487456799 seconds
+Nodal Proj :0.9318358898 seconds
+Reactions  :15.89306498 seconds
+Misc       :0.3548023701 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.26161098
+Call to estdt for level 0 gives dt_lev = 0.01482721818
+Minimum estdt over all levels = 0.01482721818
+Call to estdt at beginning of step 910 gives dt =0.01482721818
+
+Timestep 910 starts with TIME = 8.824439417 DT = 0.01482721818
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.306944555e+10
+MLMG: Initial residual (resid0) = 7.306944555e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.781764029, 7.912697278e-11
+MLMG: Timers: Solve = 0.116302773 Iter = 0.113560249 Bottom = 0.004985331
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.306944566e+10
+MLMG: Initial residual (resid0) = 1.229381721e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.908554555, 8.086217847e-11
+MLMG: Timers: Solve = 0.132537969 Iter = 0.129388794 Bottom = 0.004935003
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.045743804e+11
+MLMG: Initial residual (resid0) = 1.045743804e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09470844269, 9.056562643e-13
+MLMG: Timers: Solve = 0.667861821 Iter = 0.659674943 Bottom = 0.004246202
+Done calling nodal solver
+
+Timestep 910 ends with TIME = 8.839266635 DT = 0.01482721818
+Timing summary:
+Advection  :0.8463711739 seconds
+MAC Proj   :0.2723550797 seconds
+Nodal Proj :0.9187877178 seconds
+Reactions  :14.98689294 seconds
+Misc       :0.3105559349 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.33622909
+
+Writing plotfile 910
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 11.1482079
+
+Writing checkpoint 910
+Writing checkpoint chk0000910
+Call to estdt for level 0 gives dt_lev = 0.01448333108
+Minimum estdt over all levels = 0.01448333108
+Call to estdt at beginning of step 911 gives dt =0.01448333108
+
+Timestep 911 starts with TIME = 8.839266635 DT = 0.01448333108
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.316096504e+10
+MLMG: Initial residual (resid0) = 7.316096504e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.877464936, 6.666758609e-11
+MLMG: Timers: Solve = 0.11639481 Iter = 0.113658613 Bottom = 0.00499447
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.316096918e+10
+MLMG: Initial residual (resid0) = 1.228297533e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.736972791, 6.474726681e-11
+MLMG: Timers: Solve = 0.112420139 Iter = 0.109774824 Bottom = 0.00488655
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.967159705e+10
+MLMG: Initial residual (resid0) = 9.967159705e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08958435059, 8.987951757e-13
+MLMG: Timers: Solve = 0.670177443 Iter = 0.664712577 Bottom = 0.004382924
+Done calling nodal solver
+
+Timestep 911 ends with TIME = 8.853749966 DT = 0.01448333108
+Timing summary:
+Advection  :0.8353099823 seconds
+MAC Proj   :0.2482297421 seconds
+Nodal Proj :0.9139151573 seconds
+Reactions  :15.29825425 seconds
+Misc       :0.3436169624 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.64067602
+Call to estdt for level 0 gives dt_lev = 0.0143992799
+Minimum estdt over all levels = 0.0143992799
+Call to estdt at beginning of step 912 gives dt =0.0143992799
+
+Timestep 912 starts with TIME = 8.853749966 DT = 0.0143992799
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.020870714e+10
+MLMG: Initial residual (resid0) = 8.020870714e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.965099612, 4.943477776e-11
+MLMG: Timers: Solve = 0.11894091 Iter = 0.114619637 Bottom = 0.005105075
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.020871023e+10
+MLMG: Initial residual (resid0) = 1.226508365e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.8227277, 4.765975776e-11
+MLMG: Timers: Solve = 0.125492964 Iter = 0.122657118 Bottom = 0.004973386
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.317525955e+10
+MLMG: Initial residual (resid0) = 9.317525955e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08594226837, 9.223721918e-13
+MLMG: Timers: Solve = 0.644938319 Iter = 0.639503347 Bottom = 0.004389507
+Done calling nodal solver
+
+Timestep 912 ends with TIME = 8.868149246 DT = 0.0143992799
+Timing summary:
+Advection  :0.8451359272 seconds
+MAC Proj   :0.265255928 seconds
+Nodal Proj :0.9077270031 seconds
+Reactions  :15.3089571 seconds
+Misc       :0.3506309986 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.67905593
+Call to estdt for level 0 gives dt_lev = 0.0142054045
+Minimum estdt over all levels = 0.0142054045
+Call to estdt at beginning of step 913 gives dt =0.0142054045
+
+Timestep 913 starts with TIME = 8.868149246 DT = 0.0142054045
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.623321188e+10
+MLMG: Initial residual (resid0) = 8.623321188e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.122036126, 3.620456733e-11
+MLMG: Timers: Solve = 0.115239699 Iter = 0.112419097 Bottom = 0.005055821
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.623321266e+10
+MLMG: Initial residual (resid0) = 1.22503161e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.9569535, 3.429019294e-11
+MLMG: Timers: Solve = 0.118308673 Iter = 0.115615075 Bottom = 0.005073017
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.7480777e+10
+MLMG: Initial residual (resid0) = 8.7480777e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08229732513, 9.407475328e-13
+MLMG: Timers: Solve = 0.659316697 Iter = 0.654273264 Bottom = 0.004275557
+Done calling nodal solver
+
+Timestep 913 ends with TIME = 8.882354651 DT = 0.0142054045
+Timing summary:
+Advection  :0.8263792992 seconds
+MAC Proj   :0.2525060177 seconds
+Nodal Proj :0.8967061043 seconds
+Reactions  :14.81700492 seconds
+Misc       :0.3500761986 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.14426589
+Call to estdt for level 0 gives dt_lev = 0.01420031271
+Minimum estdt over all levels = 0.01420031271
+Call to estdt at beginning of step 914 gives dt =0.01420031271
+
+Timestep 914 starts with TIME = 8.882354651 DT = 0.01420031271
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.589237165e+10
+MLMG: Initial residual (resid0) = 8.589237165e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.345968104, 2.731288075e-11
+MLMG: Timers: Solve = 0.117261655 Iter = 0.114336176 Bottom = 0.00505851
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.589237279e+10
+MLMG: Initial residual (resid0) = 1.22350291e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.325963558, 2.707997791e-11
+MLMG: Timers: Solve = 0.135445892 Iter = 0.132700633 Bottom = 0.005029782
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.345200531e+10
+MLMG: Initial residual (resid0) = 8.345200531e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08016395569, 9.605995134e-13
+MLMG: Timers: Solve = 0.66175475 Iter = 0.656361874 Bottom = 0.004325357
+Done calling nodal solver
+
+Timestep 914 ends with TIME = 8.896554963 DT = 0.01420031271
+Timing summary:
+Advection  :0.8421392441 seconds
+MAC Proj   :0.2723631859 seconds
+Nodal Proj :0.9103422165 seconds
+Reactions  :14.84265971 seconds
+Misc       :0.3536925316 seconds
+Base State :0 seconds
+Time to advance time step: 17.222579
+Call to estdt for level 0 gives dt_lev = 0.01446611299
+Minimum estdt over all levels = 0.01446611299
+Call to estdt at beginning of step 915 gives dt =0.01446611299
+
+Timestep 915 starts with TIME = 8.896554963 DT = 0.01446611299
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.576585092e+10
+MLMG: Initial residual (resid0) = 9.576585092e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 1.822958369, 1.903557846e-11
+MLMG: Timers: Solve = 0.122673932 Iter = 0.119582628 Bottom = 0.005008419
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.576585218e+10
+MLMG: Initial residual (resid0) = 1.222374545e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 1.829175765, 1.91005011e-11
+MLMG: Timers: Solve = 0.115564943 Iter = 0.112601734 Bottom = 0.005062683
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.509279552e+10
+MLMG: Initial residual (resid0) = 8.509279552e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08010101318, 9.413371919e-13
+MLMG: Timers: Solve = 0.655439795 Iter = 0.650343213 Bottom = 0.004268184
+Done calling nodal solver
+
+Timestep 915 ends with TIME = 8.911021076 DT = 0.01446611299
+Timing summary:
+Advection  :0.8291633129 seconds
+MAC Proj   :0.2589898109 seconds
+Nodal Proj :0.8992481232 seconds
+Reactions  :15.135185 seconds
+Misc       :0.3509089947 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.47523403
+Call to estdt for level 0 gives dt_lev = 0.01498203954
+Minimum estdt over all levels = 0.01498203954
+Call to estdt at beginning of step 916 gives dt =0.01498203954
+
+Timestep 916 starts with TIME = 8.911021076 DT = 0.01498203954
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.852389498e+10
+MLMG: Initial residual (resid0) = 8.852389498e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 1.43620807, 1.622395931e-11
+MLMG: Timers: Solve = 0.125644811 Iter = 0.122606567 Bottom = 0.005025884
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.852389553e+10
+MLMG: Initial residual (resid0) = 1.221709195e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 1.46575255, 1.655770503e-11
+MLMG: Timers: Solve = 0.125681013 Iter = 0.12233694 Bottom = 0.005012541
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.506736491e+10
+MLMG: Initial residual (resid0) = 8.506736491e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08525514603, 1.00220744e-12
+MLMG: Timers: Solve = 0.652897351 Iter = 0.647399231 Bottom = 0.004361006
+Done calling nodal solver
+
+Timestep 916 ends with TIME = 8.926003116 DT = 0.01498203954
+Timing summary:
+Advection  :0.8351941109 seconds
+MAC Proj   :0.2743859291 seconds
+Nodal Proj :0.9150209427 seconds
+Reactions  :15.34529877 seconds
+Misc       :0.352656126 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.72450995
+Call to estdt for level 0 gives dt_lev = 0.0157192632
+Minimum estdt over all levels = 0.0157192632
+Call to estdt at beginning of step 917 gives dt =0.0157192632
+
+Timestep 917 starts with TIME = 8.926003116 DT = 0.0157192632
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.20689013e+10
+MLMG: Initial residual (resid0) = 8.20689013e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 1.957877636, 2.385651087e-11
+MLMG: Timers: Solve = 0.117671256 Iter = 0.114916435 Bottom = 0.004982929999
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.206890102e+10
+MLMG: Initial residual (resid0) = 1.221408575e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.034174817, 2.478618322e-11
+MLMG: Timers: Solve = 0.114583474 Iter = 0.111835642 Bottom = 0.005062071
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.024585942e+10
+MLMG: Initial residual (resid0) = 9.024585942e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09222269058, 1.021904951e-12
+MLMG: Timers: Solve = 0.649009754 Iter = 0.643760958 Bottom = 0.004455182
+Done calling nodal solver
+
+Timestep 917 ends with TIME = 8.941722379 DT = 0.0157192632
+Timing summary:
+Advection  :0.8415277004 seconds
+MAC Proj   :0.2520661354 seconds
+Nodal Proj :0.911039114 seconds
+Reactions  :15.24133086 seconds
+Misc       :0.3502259254 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.59768295
+Call to estdt for level 0 gives dt_lev = 0.01666301131
+Minimum estdt over all levels = 0.01666301131
+Call to estdt at beginning of step 918 gives dt =0.01666301131
+
+Timestep 918 starts with TIME = 8.941722379 DT = 0.01666301131
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.426248922e+10
+MLMG: Initial residual (resid0) = 8.426248922e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.465915698, 2.926469086e-11
+MLMG: Timers: Solve = 0.12571458 Iter = 0.122949447 Bottom = 0.00506816
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.426248947e+10
+MLMG: Initial residual (resid0) = 1.221378586e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.577837088, 3.059293766e-11
+MLMG: Timers: Solve = 0.134197816 Iter = 0.131499181 Bottom = 0.005038853
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.821252188e+10
+MLMG: Initial residual (resid0) = 9.821252188e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1013536453, 1.031982922e-12
+MLMG: Timers: Solve = 0.664024466 Iter = 0.657557469 Bottom = 0.004351265
+Done calling nodal solver
+
+Timestep 918 ends with TIME = 8.95838539 DT = 0.01666301131
+Timing summary:
+Advection  :0.8423223495 seconds
+MAC Proj   :0.2787919044 seconds
+Nodal Proj :0.9264750481 seconds
+Reactions  :15.38882065 seconds
+Misc       :0.3514811993 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.78937411
+Call to estdt for level 0 gives dt_lev = 0.01714348184
+Minimum estdt over all levels = 0.01714348184
+Call to estdt at beginning of step 919 gives dt =0.01714348184
+
+Timestep 919 starts with TIME = 8.95838539 DT = 0.01714348184
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.027836441e+10
+MLMG: Initial residual (resid0) = 9.027836441e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 2.896820669, 3.208765121e-11
+MLMG: Timers: Solve = 0.117184472 Iter = 0.114556531 Bottom = 0.005043955
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.027836422e+10
+MLMG: Initial residual (resid0) = 1.221147001e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.048640954, 3.376934197e-11
+MLMG: Timers: Solve = 0.116897479 Iter = 0.114210777 Bottom = 0.004979549
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.003951227e+11
+MLMG: Initial residual (resid0) = 1.003951227e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1071500778, 1.067283699e-12
+MLMG: Timers: Solve = 0.669244343 Iter = 0.664395642 Bottom = 0.00434661
+Done calling nodal solver
+
+Timestep 919 ends with TIME = 8.975528872 DT = 0.01714348184
+Timing summary:
+Advection  :0.8500380516 seconds
+MAC Proj   :0.2546532154 seconds
+Nodal Proj :0.9341080189 seconds
+Reactions  :15.93532896 seconds
+Misc       :0.3535211086 seconds
+Base State :0 seconds
+Time to advance time step: 18.32890892
+Call to estdt for level 0 gives dt_lev = 0.01638483209
+Minimum estdt over all levels = 0.01638483209
+Call to estdt at beginning of step 920 gives dt =0.01638483209
+
+Timestep 920 starts with TIME = 8.975528872 DT = 0.01638483209
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.651944236e+10
+MLMG: Initial residual (resid0) = 9.651944236e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.239864216, 3.356695954e-11
+MLMG: Timers: Solve = 0.112749277 Iter = 0.109996508 Bottom = 0.005016187
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.651944155e+10
+MLMG: Initial residual (resid0) = 1.219401378e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.401566539, 3.524229403e-11
+MLMG: Timers: Solve = 0.119600939 Iter = 0.11690942 Bottom = 0.005025692
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.087266389e+11
+MLMG: Initial residual (resid0) = 1.087266389e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1038455963, 9.551072058e-13
+MLMG: Timers: Solve = 0.66105939 Iter = 0.655465269 Bottom = 0.004531577001
+Done calling nodal solver
+
+Timestep 920 ends with TIME = 8.991913704 DT = 0.01638483209
+Timing summary:
+Advection  :0.8376302719 seconds
+MAC Proj   :0.2514998913 seconds
+Nodal Proj :0.9224522114 seconds
+Reactions  :15.42701411 seconds
+Misc       :0.3508081436 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.79081392
+
+Writing plotfile 920
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 12.05110502
+
+Writing checkpoint 920
+Writing checkpoint chk0000920
+Call to estdt for level 0 gives dt_lev = 0.01616812176
+Minimum estdt over all levels = 0.01616812176
+Call to estdt at beginning of step 921 gives dt =0.01616812176
+
+Timestep 921 starts with TIME = 8.991913704 DT = 0.01616812176
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.111345163e+10
+MLMG: Initial residual (resid0) = 9.111345163e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.469286973, 3.807656181e-11
+MLMG: Timers: Solve = 0.115060732 Iter = 0.112168442 Bottom = 0.005007374
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 9.111345083e+10
+MLMG: Initial residual (resid0) = 1.216462657e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.629037926, 3.982988124e-11
+MLMG: Timers: Solve = 0.125239244 Iter = 0.121372739 Bottom = 0.004953487
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.087028681e+11
+MLMG: Initial residual (resid0) = 1.087028681e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.1018676758, 9.371204047e-13
+MLMG: Timers: Solve = 0.657285009 Iter = 0.65091625 Bottom = 0.004542135
+Done calling nodal solver
+
+Timestep 921 ends with TIME = 9.008081826 DT = 0.01616812176
+Timing summary:
+Advection  :0.8332140446 seconds
+MAC Proj   :0.2605400085 seconds
+Nodal Proj :0.9066209793 seconds
+Reactions  :15.47796726 seconds
+Misc       :0.3523213863 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.83214617
+Call to estdt for level 0 gives dt_lev = 0.01553624102
+Minimum estdt over all levels = 0.01553624102
+Call to estdt at beginning of step 922 gives dt =0.01553624102
+
+Timestep 922 starts with TIME = 9.008081826 DT = 0.01553624102
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.404222149e+10
+MLMG: Initial residual (resid0) = 8.404222149e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.588760239, 4.270187265e-11
+MLMG: Timers: Solve = 0.123431869 Iter = 0.12073749 Bottom = 0.005076369
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.404222045e+10
+MLMG: Initial residual (resid0) = 1.214140551e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.737575636, 4.447259504e-11
+MLMG: Timers: Solve = 0.115013206 Iter = 0.11228111 Bottom = 0.00498924
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.752150427e+10
+MLMG: Initial residual (resid0) = 9.752150427e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.09498023987, 9.739414971e-13
+MLMG: Timers: Solve = 0.669582304 Iter = 0.663525489 Bottom = 0.00472677
+Done calling nodal solver
+
+Timestep 922 ends with TIME = 9.023618067 DT = 0.01553624102
+Timing summary:
+Advection  :0.8363041878 seconds
+MAC Proj   :0.2584629059 seconds
+Nodal Proj :0.9322729111 seconds
+Reactions  :15.39860106 seconds
+Misc       :0.3522748947 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.77906084
+Call to estdt for level 0 gives dt_lev = 0.01481478837
+Minimum estdt over all levels = 0.01481478837
+Call to estdt at beginning of step 923 gives dt =0.01481478837
+
+Timestep 923 starts with TIME = 9.023618067 DT = 0.01481478837
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.757506974e+10
+MLMG: Initial residual (resid0) = 8.757506974e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.608458553, 4.120417562e-11
+MLMG: Timers: Solve = 0.119674258 Iter = 0.115557773 Bottom = 0.005036981
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.757506903e+10
+MLMG: Initial residual (resid0) = 1.211313829e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.74362856, 4.274765183e-11
+MLMG: Timers: Solve = 0.119687811 Iter = 0.11573188 Bottom = 0.004994528
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.008930998e+11
+MLMG: Initial residual (resid0) = 1.008930998e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.08618545532, 8.542254677e-13
+MLMG: Timers: Solve = 0.653759307 Iter = 0.648627582 Bottom = 0.004653993
+Done calling nodal solver
+
+Timestep 923 ends with TIME = 9.038432855 DT = 0.01481478837
+Timing summary:
+Advection  :0.8393769264 seconds
+MAC Proj   :0.2593200207 seconds
+Nodal Proj :0.9145014286 seconds
+Reactions  :15.15264487 seconds
+Misc       :0.352152586 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.51925516
+Call to estdt for level 0 gives dt_lev = 0.01428231891
+Minimum estdt over all levels = 0.01428231891
+Call to estdt at beginning of step 924 gives dt =0.01428231891
+
+Timestep 924 starts with TIME = 9.038432855 DT = 0.01428231891
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.699729888e+10
+MLMG: Initial residual (resid0) = 8.699729888e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.5591143, 4.091062994e-11
+MLMG: Timers: Solve = 0.115235027 Iter = 0.112507972 Bottom = 0.004957788
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 8.699729838e+10
+MLMG: Initial residual (resid0) = 1.20858797e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.673285736, 4.222298628e-11
+MLMG: Timers: Solve = 0.125911696 Iter = 0.123095127 Bottom = 0.005039153
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 1.006608217e+11
+MLMG: Initial residual (resid0) = 1.006608217e+11
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.07749557495, 7.698682927e-13
+MLMG: Timers: Solve = 0.650035057 Iter = 0.644873667 Bottom = 0.004697183
+Done calling nodal solver
+
+Timestep 924 ends with TIME = 9.052715174 DT = 0.01428231891
+Timing summary:
+Advection  :0.8415896893 seconds
+MAC Proj   :0.2650072575 seconds
+Nodal Proj :0.916520834 seconds
+Reactions  :15.32350349 seconds
+Misc       :0.3200821877 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 17.66803408
+Call to estdt for level 0 gives dt_lev = 0.01390608536
+Minimum estdt over all levels = 0.01390608536
+Call to estdt at beginning of step 925 gives dt =0.01390608536
+
+Timestep 925 starts with TIME = 9.052715174 DT = 0.01390608536
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.563843932e+10
+MLMG: Initial residual (resid0) = 7.563843932e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.460281592, 4.574765982e-11
+MLMG: Timers: Solve = 0.128762184 Iter = 0.124350173 Bottom = 0.004979476
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.563843959e+10
+MLMG: Initial residual (resid0) = 1.20631972e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.549198697, 4.692321413e-11
+MLMG: Timers: Solve = 0.109411137 Iter = 0.106663546 Bottom = 0.005001495
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 9.49104173e+10
+MLMG: Initial residual (resid0) = 9.49104173e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.06914138794, 7.28491033e-13
+MLMG: Timers: Solve = 0.661287941 Iter = 0.655777704 Bottom = 0.004757792
+Done calling nodal solver
+
+Timestep 925 ends with TIME = 9.06662126 DT = 0.01390608536
+Timing summary:
+Advection  :0.8444290161 seconds
+MAC Proj   :0.2572369576 seconds
+Nodal Proj :0.9230690002 seconds
+Reactions  :14.56920886 seconds
+Misc       :0.3455352783 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 16.94083905
+Call to estdt for level 0 gives dt_lev = 0.0136317928
+Minimum estdt over all levels = 0.0136317928
+Call to estdt at beginning of step 926 gives dt =0.0136317928
+
+Timestep 926 starts with TIME = 9.06662126 DT = 0.0136317928
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.649828012e+10
+MLMG: Initial residual (resid0) = 6.649828012e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.306588527, 4.972442176e-11
+MLMG: Timers: Solve = 0.106734794 Iter = 0.103946214 Bottom = 0.00501469
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.649828034e+10
+MLMG: Initial residual (resid0) = 1.204729925e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.365892369, 5.061623175e-11
+MLMG: Timers: Solve = 0.116898058 Iter = 0.114137417 Bottom = 0.004959665
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.376138684e+10
+MLMG: Initial residual (resid0) = 8.376138684e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.06120300293, 7.306827792e-13
+MLMG: Timers: Solve = 0.667509368 Iter = 0.66216286 Bottom = 0.004782086
+Done calling nodal solver
+
+Timestep 926 ends with TIME = 9.080253052 DT = 0.0136317928
+Timing summary:
+Advection  :0.8353159428 seconds
+MAC Proj   :0.2432901859 seconds
+Nodal Proj :0.9312281609 seconds
+Reactions  :14.29143381 seconds
+Misc       :0.3508059978 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.65499997
+Call to estdt for level 0 gives dt_lev = 0.01350258958
+Minimum estdt over all levels = 0.01350258958
+Call to estdt at beginning of step 927 gives dt =0.01350258958
+
+Timestep 927 starts with TIME = 9.080253052 DT = 0.01350258958
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.590626247e+10
+MLMG: Initial residual (resid0) = 6.590626247e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.554293412, 5.392952473e-11
+MLMG: Timers: Solve = 0.115713725 Iter = 0.112892706 Bottom = 0.004978297
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 6.590626179e+10
+MLMG: Initial residual (resid0) = 1.204590977e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.521726409, 5.343538404e-11
+MLMG: Timers: Solve = 0.115220119 Iter = 0.112510662 Bottom = 0.005019243
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.159264738e+10
+MLMG: Initial residual (resid0) = 8.159264738e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.05786514282, 7.091955548e-13
+MLMG: Timers: Solve = 0.65876052 Iter = 0.653301913 Bottom = 0.004539069
+Done calling nodal solver
+
+Timestep 927 ends with TIME = 9.093755642 DT = 0.01350258958
+Timing summary:
+Advection  :0.8381388187 seconds
+MAC Proj   :0.2507970333 seconds
+Nodal Proj :0.9071621895 seconds
+Reactions  :14.37021017 seconds
+Misc       :0.3493051529 seconds
+Base State :1.192092896e-06 seconds
+Time to advance time step: 16.71687913
+Call to estdt for level 0 gives dt_lev = 0.01351976507
+Minimum estdt over all levels = 0.01351976507
+Call to estdt at beginning of step 928 gives dt =0.01351976507
+
+Timestep 928 starts with TIME = 9.093755642 DT = 0.01351976507
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.343630887e+10
+MLMG: Initial residual (resid0) = 7.343630887e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.938544618, 5.363211575e-11
+MLMG: Timers: Solve = 0.116128155 Iter = 0.113243884 Bottom = 0.005051091
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.343630931e+10
+MLMG: Initial residual (resid0) = 1.204473903e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 3.9429576, 5.369220807e-11
+MLMG: Timers: Solve = 0.123384443 Iter = 0.120520855 Bottom = 0.004968654
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.116580633e+10
+MLMG: Initial residual (resid0) = 8.116580633e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.05895233154, 7.263197916e-13
+MLMG: Timers: Solve = 0.682181881 Iter = 0.676676554 Bottom = 0.004604418
+Done calling nodal solver
+
+Timestep 928 ends with TIME = 9.107275407 DT = 0.01351976507
+Timing summary:
+Advection  :0.8352208138 seconds
+MAC Proj   :0.2624311447 seconds
+Nodal Proj :0.9462759495 seconds
+Reactions  :14.41426301 seconds
+Misc       :0.310438633 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.7700448
+Call to estdt for level 0 gives dt_lev = 0.01341301737
+Minimum estdt over all levels = 0.01341301737
+Call to estdt at beginning of step 929 gives dt =0.01341301737
+
+Timestep 929 starts with TIME = 9.107275407 DT = 0.01341301737
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.635598396e+10
+MLMG: Initial residual (resid0) = 7.635598396e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.39185068, 5.751809423e-11
+MLMG: Timers: Solve = 0.118324797 Iter = 0.115605443 Bottom = 0.005053839
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.635598779e+10
+MLMG: Initial residual (resid0) = 1.204466265e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.409215772, 5.774551413e-11
+MLMG: Timers: Solve = 0.117494793 Iter = 0.114676308 Bottom = 0.004994145
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.618201917e+10
+MLMG: Initial residual (resid0) = 8.618201917e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.05921363831, 6.870764792e-13
+MLMG: Timers: Solve = 0.662788505 Iter = 0.657829221 Bottom = 0.004503345
+Done calling nodal solver
+
+Timestep 929 ends with TIME = 9.120688424 DT = 0.01341301737
+Timing summary:
+Advection  :0.836663723 seconds
+MAC Proj   :0.2551801205 seconds
+Nodal Proj :0.9169929028 seconds
+Reactions  :14.61960292 seconds
+Misc       :0.3513870239 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 16.98126912
+Call to estdt for level 0 gives dt_lev = 0.01321786896
+Minimum estdt over all levels = 0.01321786896
+Call to estdt at beginning of step 930 gives dt =0.01321786896
+
+Timestep 930 starts with TIME = 9.120688424 DT = 0.01321786896
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.947063594e+10
+MLMG: Initial residual (resid0) = 7.947063594e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.912679595, 6.181754478e-11
+MLMG: Timers: Solve = 0.098430583 Iter = 0.095473346 Bottom = 0.005020929001
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.947063569e+10
+MLMG: Initial residual (resid0) = 1.204431479e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 4.928838654, 6.202087867e-11
+MLMG: Timers: Solve = 0.116278935 Iter = 0.113458275 Bottom = 0.004987316
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.448427004e+10
+MLMG: Initial residual (resid0) = 8.448427004e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.05851554871, 6.926206343e-13
+MLMG: Timers: Solve = 0.653231331 Iter = 0.648178854 Bottom = 0.004423078
+Done calling nodal solver
+
+Timestep 930 ends with TIME = 9.133906293 DT = 0.01321786896
+Timing summary:
+Advection  :0.8404324055 seconds
+MAC Proj   :0.2342090607 seconds
+Nodal Proj :0.907574892 seconds
+Reactions  :15.13579988 seconds
+Misc       :0.3113241196 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.43069196
+
+Writing plotfile 930
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+Time to write plotfile: 9.532220125
+
+Writing checkpoint 930
+Writing checkpoint chk0000930
+Call to estdt for level 0 gives dt_lev = 0.01318449885
+Minimum estdt over all levels = 0.01318449885
+Call to estdt at beginning of step 931 gives dt =0.01318449885
+
+Timestep 931 starts with TIME = 9.133906293 DT = 0.01318449885
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.120369391e+10
+MLMG: Initial residual (resid0) = 7.120369391e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.429059956, 7.624688633e-11
+MLMG: Timers: Solve = 0.118118945 Iter = 0.115408428 Bottom = 0.005079408
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.12036934e+10
+MLMG: Initial residual (resid0) = 1.204285062e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.421247526, 7.613716742e-11
+MLMG: Timers: Solve = 0.118188086 Iter = 0.115407221 Bottom = 0.004991305
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.318623897e+10
+MLMG: Initial residual (resid0) = 8.318623897e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.05847358704, 7.02923798e-13
+MLMG: Timers: Solve = 0.660252633 Iter = 0.655050767 Bottom = 0.00439726
+Done calling nodal solver
+
+Timestep 931 ends with TIME = 9.147090792 DT = 0.01318449885
+Timing summary:
+Advection  :0.8340606689 seconds
+MAC Proj   :0.2554271221 seconds
+Nodal Proj :0.9242341518 seconds
+Reactions  :15.84485793 seconds
+Misc       :0.3254594803 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 18.18593788
+Call to estdt for level 0 gives dt_lev = 0.01333937525
+Minimum estdt over all levels = 0.01333937525
+Call to estdt at beginning of step 932 gives dt =0.01333937525
+
+Timestep 932 starts with TIME = 9.147090792 DT = 0.01333937525
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.654986376e+10
+MLMG: Initial residual (resid0) = 7.654986376e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.869340904, 7.66734337e-11
+MLMG: Timers: Solve = 0.117320931 Iter = 0.114562415 Bottom = 0.005088008
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 6 : make new S and new w0 >>>
+<<< STEP 7 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.65498632e+10
+MLMG: Initial residual (resid0) = 1.204148237e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 5.873691555, 7.673026848e-11
+MLMG: Timers: Solve = 0.133758146 Iter = 0.126400737 Bottom = 0.005036404
+<<< STEP 8 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 8a: thermal conduct >>>
+<<< STEP 9 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 10: make new S >>>
+<<< STEP 11: update and project new velocity >>>
+Calling nodal solver
+MLMG: Initial rhs               = 8.040676673e+10
+MLMG: Initial residual (resid0) = 8.040676673e+10
+MLMG: Final Iter. 7 resid, resid/bnorm = 0.05876541138, 7.30851566e-13
+MLMG: Timers: Solve = 0.65702958 Iter = 0.652199048 Bottom = 0.004257867
+Done calling nodal solver
+
+Timestep 932 ends with TIME = 9.160430167 DT = 0.01333937525
+Timing summary:
+Advection  :0.8112556934 seconds
+MAC Proj   :0.2709357738 seconds
+Nodal Proj :0.9184801579 seconds
+Reactions  :15.46659613 seconds
+Misc       :0.3076090813 seconds
+Base State :9.536743164e-07 seconds
+Time to advance time step: 17.776649
+Call to estdt for level 0 gives dt_lev = 0.01366046093
+Minimum estdt over all levels = 0.01366046093
+Call to estdt at beginning of step 933 gives dt =0.01366046093
+
+Timestep 933 starts with TIME = 9.160430167 DT = 0.01366046093
+
+Cell Count:
+Level 0, 16777216 cells
+inner sponge: r_sp      , r_tp      : 24250000, 24250000
+outer sponge: r_sp_outer, r_tp_outer: 24250000, 24468750
+<<< STEP 1 : react state >>>
+an_real after define =0
+an_real after ReduceRealMin =0
+xinlong_state in Maestro::Burner() print = 20
+<<< STEP 2 : make w0 >>>
+<<< STEP 3 : create MAC velocities >>>
+MLMG: Initial rhs               = 7.463689562e+10
+MLMG: Initial residual (resid0) = 7.463689562e+10
+MLMG: Final Iter. 8 resid, resid/bnorm = 6.26883815, 8.399114269e-11
+MLMG: Timers: Solve = 0.10476582 Iter = 0.102055326 Bottom = 0.005182243
+<<< STEP 4 : advect base >>>
+            :  density_advance >>>
+            :   tracer_advance >>>
+            : enthalpy_advance >>>
+<<< STEP 4a: thermal conduct >>>
+<<< STEP 5 : react state >>>
+an_real after define =0
+slurmstepd: error: *** STEP 30495594.0 ON nid00612 CANCELLED AT 2020-05-08T21:24:40 ***
+srun: got SIGCONT
+slurmstepd: error: *** JOB 30495594 ON nid00612 CANCELLED AT 2020-05-08T21:24:40 ***
+srun: forcing job termination
